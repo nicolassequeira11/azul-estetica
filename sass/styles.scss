@@ -1,0 +1,147 @@
+@use "header.scss";
+@use "footer.scss";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* HOME */
+
+.carousel-home{
+    display: flex;
+    height: 85vh;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+
+        &__img{
+            width: 100%;
+            object-fit: cover;
+        }
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 4em 0;
+    font-family: 'Montserrat', sans-serif;
+
+        &__titulo{
+        }
+
+        &__list{
+            display: flex;
+            margin: auto;
+            width: 100%;
+            justify-content: center;
+        }
+
+        &__list__cont{
+            width: calc(80%/6);
+            height: 50%;
+            margin: auto 0.5em;
+        }
+
+        &__list__item{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        &__list__item__img{
+            width: 100%;
+            height: 8em;
+            margin: auto;
+            justify-content: center;
+            object-fit: cover;
+        }
+
+        &__list__titulo{
+            display: flex;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            justify-content: center;
+            font-size: 1.3em;
+            font-family: 'Montserrat', sans-serif;
+        }
+}
+
+.slogan-1{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    background-color: whitesmoke;
+
+        &__texto{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            justify-content: center;
+            font-size: 3em;
+            padding: 1em 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+}
+
+.galeria{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 4em 0;
+
+        &__carousel{
+            width: 70%;
+            margin: auto;
+        }
+
+        &__titulo{
+            display: flex;
+            width: 100%;
+            margin: auto;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+}
+
+#carouselExampleCaptions{
+    display: flex;
+    margin: auto;
+}
+
+.carousel-title{
+    background-color: black;
+    width: 40%;
+    margin: auto;
+    padding: 0.3em;
+}
+
+.banner{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    background-color: #005ca9;
+
+        &__img-cont{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            width: 45%;
+        }
+
+        &__img{
+            width: 100%;
+        }
+}
