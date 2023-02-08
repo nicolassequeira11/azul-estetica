@@ -43,12 +43,12 @@
 
 .nav{
 	display: flex;
-	height: 100px;
+	height: 6em;
 	background-color: map-get(c.$color-header,"color2");
 	width: 100%;
-	margin: auto;
+	margin:-6em auto 0;
 	position: fixed;
-	z-index: 1000;
+	z-index: 2000;
 
         &{
             display: flex;
