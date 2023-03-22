@@ -1,5 +1,6 @@
 @use "header.scss";
 @use "footer.scss";
+@use "commons.scss";
 
 * {
 	padding: 0;
@@ -28,81 +29,72 @@ body{
 }
 
 .servicios{
-    display: flex;
-    flex-direction: column;
+    @include commons.caja-flex (center, auto, column);
     width: 100%;
-    margin: auto;
-    justify-content: center;
-    text-align: center;
     padding: 4em 0;
     font-family: 'Montserrat', sans-serif;
+    flex-wrap: wrap;
 
         &__titulo{
+            @include commons.caja-flex (center, auto, none);
         }
 
         &__list{
-            display: flex;
-            margin: auto;
+            @include commons.caja-flex (center, auto, none);
             width: 100%;
-            justify-content: center;
         }
 
         &__list__cont{
-            width: calc(80%/6);
-            height: 50%;
-            margin: auto 0.5em;
-        }
-
-        &__list__item{
-            width: 100%;
+            position: relative;
+            width: calc(80%/3);
             height: 100%;
-            display: flex;
-            flex-direction: column;
-            margin: auto;
+            margin: auto 0.5em;
+            flex-wrap: wrap;
+            padding: 0 1em 0 1em;
         }
 
         &__list__item__img{
+            @include commons.caja-flex (center, auto, none);
             width: 100%;
-            height: 8em;
-            margin: auto;
-            justify-content: center;
+            height: 10em;
             object-fit: cover;
+            border-radius: 0.7em;
+            opacity: 0.8;
         }
 
         &__list__titulo{
-            display: flex;
-            width: 100%;
+            @include commons.caja-flex (center, auto, none);
+            color: white;
+            position: relative;
+            bottom: 3em;
+            opacity: 1;
             text-align: center;
-            margin: auto;
-            justify-content: center;
-            font-size: 1.3em;
+            font-size: 2em;
+            background: rgb(0,57,83);background: linear-gradient(0deg, rgb(3, 94, 136) 50%, rgb(0, 65, 95) 100%);
             font-family: 'Montserrat', sans-serif;
         }
 }
 
 .slogan-1{
-    display: flex;
+    @include commons.caja-flex (center, auto, none);
     width: 100%;
-    margin: auto;
-    background-color: whitesmoke;
+    background: rgb(0,57,83);background: linear-gradient(0deg, rgb(3, 94, 136) 50%, rgb(0, 65, 95) 100%);
+
 
         &__texto{
-            display: flex;
+            @include commons.caja-flex (center, auto, none);
             width: 80%;
-            margin: auto;
             text-align: center;
-            justify-content: center;
-            font-size: 3em;
+            font-size: 2.5em;
+            color: white;
             padding: 1em 0;
             font-family: 'Montserrat', sans-serif;
         }
 }
 
 .galeria{
+    @include commons.caja-flex (center, auto, column);
     width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
     padding: 4em 0;
 
         &__carousel{
@@ -111,31 +103,23 @@ body{
         }
 
         &__titulo{
-            display: flex;
+            @include commons.caja-flex (center, auto, none);
             width: 100%;
-            margin: auto;
-            justify-content: center;
             font-family: 'Montserrat', sans-serif;
         }
 }
 
 #carouselExampleCaptions{
-    display: flex;
-    margin: auto;
+    @include commons.caja-flex (center, auto, none);
 }
 
-.carousel-title{
-    background-color: black;
-    width: 40%;
-    margin: auto;
-    padding: 0.3em;
+.carousel-inner{
+    border-radius: 0.7em;
 }
 
 .banner{
-    display: flex;
+    @include commons.caja-flex (center, auto, none);
     width: 100%;
-    margin: auto;
-    justify-content: center;
     background-color: #005ca9;
 
         &__img-cont{
@@ -161,67 +145,62 @@ body{
 }
 
 .servicios-precios{
-    display: flex;
-    flex-direction: column;
+    @include commons.caja-flex (none, none, column);
     width: calc(85%/3);
     padding: 2em 0;
     
 
         &__list{
-            display: flex;
-            flex-direction: column;
+            @include commons.caja-flex (center, 0 auto, column);
             width: 90%;
-            margin:0 auto;
-            background-color: whitesmoke;
+            border-radius: 0.7em;
         }
 
         &__info{
-            display: flex;
+            @include commons.caja-flex (center, 1em auto 0, column);
             width: 100%;
-            margin: auto;
-            justify-content: center;
+            background-color: whitesmoke;
+            border-radius: 0.7em;
         }
 
         &__img{
-            display: flex;
+            @include commons.caja-flex (center, auto, none);
             position: relative;
-            margin: auto;
             width: 100%;
             height: 10em;
-            justify-content: center;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+            border-radius: 0.7em;
         }
 
         &__img__img{
-            display: flex;
-            margin:0 auto;
+            @include commons.caja-flex (center, 0 auto, none);
             object-fit:cover;
-            justify-content: center;
             width: 100%;
-            opacity: 0.3;
+            opacity: 0.8;
+            border-radius: 0.7em;
         }
 
         &__img__titulo{
             position: absolute;
             color: white;
-            top: 1.35em;
+            width: 100%;
+            text-align: center;
+            top: 1.85em;
             opacity: 1;
-            font-size: 2.5em;
+            font-size: 2em;
             font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(0deg, rgb(3, 94, 136) 50%, rgb(0, 65, 95) 100%);
         }
 }
 
 .servicios-items{
-    display: flex;
-    flex-direction: column;
+    @include commons.caja-flex (center, auto, column);
     width: 100%;
+    align-items: center;
 
         &__cont{
-            display: flex;
-            flex-direction: column;
+            @include commons.caja-flex (center, 0 0 0 -2em, column);
             width: 100%;
-            padding: 0.7em 0;
-            margin: auto;
+            padding: 0.7em 0.7em;
         }
 
         &__items-cont{
@@ -229,15 +208,492 @@ body{
         }
 
         &__texto-cont{
-            display: flex;
-            flex-direction: column;
+            @include commons.caja-flex (none, none, column);
         }
 
         &__texto{
-            display: flex;
-            flex-direction: column;
+            @include commons.caja-flex (none, none, column);
             text-decoration: none;
             padding: 0.5em 0;
             font-size: 0.85em;
         }
+}
+
+/* PROMOCIONES */
+
+.promo{
+    @include commons.caja-flex (center, auto, column);
+    width: 80%;
+    text-align: center;
+    padding: 2em 0 2em 0;
+
+        &__titulo{
+            font-family: 'Montserrat', sans-serif;
+
+
+        }
+
+        &__info{
+            padding:0 0 2em 0;
+
+        }
+}
+
+
+/* NOSOTROS */
+
+.nosotros{
+    @include commons.caja-flex (none, none, column);
+    width: calc(85%/3);
+    padding: 2em 0;
+
+        &__img{
+            @include commons.caja-flex (center, auto, none);
+            position: relative;
+            width: 100%;
+            height: 15em;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(52, 167, 222, 1));
+        }
+
+        &__img__img{
+            @include commons.caja-flex (center, 0 auto, none);
+            object-fit:cover;
+            width: 100%;
+            opacity: 0.3;
+        }
+
+        &__img__titulo{
+            position: absolute;
+            color: white;
+            top: 1em;
+            opacity: 1;
+            font-size: 4.5em;
+            font-family: 'Montserrat', sans-serif;
+        }
+}
+
+.nosotros-titulo{
+    @include commons.caja-flex (center, none, none);
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    padding: 1em 0 1em 0;
+}
+
+.nosotros-historia{
+    @include commons.caja-flex (center, auto, none);
+    width: 80%;
+    text-align: center;
+    padding: 0 4em 4em 4em;
+}
+
+.nosotros-info{
+    @include commons.caja-flex (center, auto, none);
+    text-align: center;
+
+        &__cont{
+            margin: auto;
+            width: 50%;
+        }
+
+        &__titulo{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        &__texto{
+            padding: 0 4em 0 4em;
+        }
+
+        &__img__cont{
+            width: 50%;
+            justify-content: center;
+        }
+
+        &__img{
+            width: 100%;
+            height: 30em;
+            object-fit: cover;
+        }
+}
+
+/* CONTACTO */
+
+.contacto{
+    @include commons.caja-flex (center, auto, column);
+    width: 90%;
+
+        &__titulo__cont{
+            @include commons.caja-flex (center, 2em auto 0, column);
+            text-align: center;
+        }
+
+        &__titulo{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3em;
+        }
+
+        &__subtitulo{
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        &__cont{
+            display: flex;
+            width: 90%;
+            margin: auto;
+        }
+
+        &__form{
+            @include commons.caja-flex (none, 1em auto 0, column);
+            width: 100%;
+            padding: 1em;
+        }
+
+        &__form__cont{
+            @include commons.caja-flex (center, 0 auto, column);
+            width: 90%;
+            background-color: whitesmoke;
+            border-radius: 0.7em;
+            padding: 0.5em;
+        }
+
+        &__form__input{
+            display: flex;
+            padding: 0.5em;
+            margin: 0.5em;
+        }
+
+        &__form__textarea{
+            display: flex;
+            padding: 1em;
+            margin: 0.5em;
+            border: none;
+        }
+
+        &__form__button{
+            @include commons.caja-flex (center, 0.5em , column);
+            padding: 1em;
+            background-color: white;
+            border: none;
+        }
+
+        &__local{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 1em;
+        }
+
+        &__local__cont{
+            @include commons.caja-flex (center, 1em, column);
+            width: 90%;
+            padding: 1em;
+            background-color: whitesmoke;
+            border-radius: 0.7em;
+        }
+
+        &__local__img__cont{
+            @include commons.caja-flex (center, auto, none);
+            position: relative;
+            width: 100%;
+            height: 5em;
+            border-radius: 0.7em;
+        }
+
+        &__local__img{
+            @include commons.caja-flex (center, 0 auto, none);
+            object-fit:cover;
+            width: 100%;
+            opacity: 0.8;
+            border-radius: 0.7em;
+        }
+
+        &__local__img__titulo{
+            position: absolute;
+            color: white;
+            top: 0.5em;
+            font-size: 2em;
+            width: 100%;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            background-color: rgb(0,57,83);background: linear-gradient(0deg, rgb(3, 94, 136) 50%, rgb(0, 65, 95) 100%);
+        }
+
+        &__local__info__cont{
+            @include commons.caja-flex (center, auto, column);
+            width: 100%;
+            padding: 1em;
+        }
+
+        &__local__info__texto{
+            @include commons.caja-flex (none, auto, none);
+            width: 100%;
+            padding: 0.7em;
+        }
+
+        &__local__map{
+            @include commons.caja-flex (center, auto, none);
+            width: 100%;
+            height: 15em;
+        }
+}
+
+.bi{
+    margin-right: 0.6em;
+}
+
+@media screen and (max-width:1328px) {
+    
+    .servicios-cont{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .servicios-precios{
+        @include commons.caja-flex (none, none, column);
+        width: calc(90%/2);
+        padding: 2em 0;
+        
+
+            &__list{
+                @include commons.caja-flex (center, 0 auto, column);
+                width: 90%;
+                min-width: 22em;
+                border-radius: 0.7em;
+                flex-wrap: wrap;
+            }
+
+            &__info{
+                @include commons.caja-flex (center, 1em auto 0, column);
+                width: 100%;
+                background-color: whitesmoke;
+                border-radius: 0.7em;
+            }
+
+            &__img{
+                @include commons.caja-flex (center, auto, none);
+                position: relative;
+                width: 100%;
+                height: 10em;
+                border-radius: 0.7em;
+            }
+
+            &__img__img{
+                @include commons.caja-flex (center, 0 auto, none);
+                object-fit:cover;
+                width: 100%;
+                opacity: 0.8;
+                border-radius: 0.7em;
+            }
+
+            &__img__titulo{
+                position: absolute;
+                color: white;
+                top: 1.35em;
+                opacity: 1;
+                font-size: 2.5em;
+                font-family: 'Montserrat', sans-serif;
+            }
+    }
+
+    .servicios-items{
+        @include commons.caja-flex (center, auto, column);
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+
+            &__cont{
+                @include commons.caja-flex (center, 0 0 0 -2em, column);
+                width: 100%;
+                padding: 0.7em 0.7em;
+            }
+
+            &__items-cont{
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            &__texto-cont{
+                @include commons.caja-flex (none, none, column);
+            }
+
+            &__texto{
+                @include commons.caja-flex (none, none, column);
+                text-decoration: none;
+                padding: 0.5em 0;
+                font-size: 0.85em;
+            }
+    }
+
+}
+
+@media screen and (max-width:980px) {
+
+    // HOME
+    
+    .carousel-home{
+        display: flex;
+        height: 15em;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    
+            &__img{
+                width: 100%;
+                object-fit: cover;
+            }
+    }
+
+    .banner{
+        @include commons.caja-flex (center, auto, none);
+        width: 100%;
+        background-color: #005ca9;
+    
+            &__img-cont{
+                display: flex;
+                margin: auto;
+                justify-content: center;
+                width: 90%;
+            }
+    
+            &__img{
+                width: 100%;
+            }
+    }
+
+    .servicios{
+        @include commons.caja-flex (center, auto, column);
+        width: 100%;
+        text-align: center;
+        padding: 4em 0;
+        font-family: 'Montserrat', sans-serif;
+        flex-wrap: wrap;
+    
+            &__titulo{
+                @include commons.caja-flex (center, 0 auto 0.5em, none);
+                font-size: 2.5em;
+            }
+    
+            &__list{
+                @include commons.caja-flex (center, auto, none);
+                width: 100%;
+                flex-wrap: wrap;
+            }
+    
+            &__list__cont{
+                width: 80%;
+                height: 50%;
+                margin: auto 0.5em;
+            }
+    
+            &__list__item__img{
+                @include commons.caja-flex (center, auto, none);
+                width: 100%;
+                height: 8em;
+                object-fit: cover;
+                border-radius: 0.7em;
+            }
+    
+            &__list__titulo{
+                @include commons.caja-flex (center, auto, none);
+                color: white;
+                position: relative;
+                bottom: 2.5em;
+                opacity: 1;
+                text-align: center;
+                font-size: 2em;
+                background: rgb(0,57,83);background: linear-gradient(0deg, rgb(3, 94, 136) 50%, rgb(0, 65, 95) 100%);
+                font-family: 'Montserrat', sans-serif;
+            }
+    }
+
+    //SERVICIOS
+
+    .servicios-cont{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .servicios-precios{
+        @include commons.caja-flex (none, none, column);
+        width: 90%;
+        padding: 2em 0;
+        
+
+            &__list{
+                @include commons.caja-flex (center, 0 auto, column);
+                width: 90%;
+                min-width: 22em;
+                border-radius: 0.7em;
+                flex-wrap: wrap;
+            }
+
+            &__info{
+                @include commons.caja-flex (center, 1em auto 0, column);
+                width: 100%;
+                background-color: whitesmoke;
+                border-radius: 0.7em;
+            }
+
+            &__img{
+                @include commons.caja-flex (center, auto, none);
+                position: relative;
+                width: 100%;
+                height: 10em;
+                border-radius: 0.7em;
+            }
+
+            &__img__img{
+                @include commons.caja-flex (center, 0 auto, none);
+                object-fit:cover;
+                width: 100%;
+                opacity: 0.8;
+                border-radius: 0.7em;
+            }
+
+            &__img__titulo{
+                position: absolute;
+                color: white;
+                top: 1.35em;
+                opacity: 1;
+                font-size: 2.5em;
+                font-family: 'Montserrat', sans-serif;
+            }
+    }
+
+    .servicios-items{
+        @include commons.caja-flex (center, auto, column);
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+
+            &__cont{
+                @include commons.caja-flex (center, 0 0 0 -2em, column);
+                width: 100%;
+                padding: 0.7em 0.7em;
+            }
+
+            &__items-cont{
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            &__texto-cont{
+                @include commons.caja-flex (none, none, column);
+            }
+
+            &__texto{
+                @include commons.caja-flex (none, none, column);
+                text-decoration: none;
+                padding: 0.5em 0;
+                font-size: 0.85em;
+            }
+    }
+
 }

@@ -1,70 +1,136 @@
+@use "commons.scss";
+
 
 footer{
     width: 100%;
-    background-color: black;
+    background: rgb(0,57,83);
+    background: linear-gradient(180deg, rgb(3, 94, 136) 50%, rgb(0, 65, 95) 100%);
 }
 
 .footer{
-    background-color: black;
-    display: flex;
-    width: 80%;
-    margin: auto;
-    padding: 2em;
-    justify-content: space-between;
+    @include commons.caja-flex (space-between, auto, none);
+    width: 70%;
+    padding: 1em;
 
         &__info{
             width: calc(100%/3);
-            color: white;
-            font-family: 'Montserrat', sans-serif;
             text-align: center;
-        }
-
-        &__info p{
-            font-size: 1em;
-        }
-
-        &__horario{
-            width: calc(100%/3);
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-        }
-
-        &__redes{
-            width: calc(100%/3);
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-        }
-
-        &__logo{
-            display: flex;
-            width: 100%;
             margin: auto;
-            flex-direction: row;
-            background-color:white;
+            padding: 2em;
         }
 
-        &__logo__cont{
+        &__info__titulo{
+            font-family: 'Montserrat', sans-serif;
+            text-align: left;
+            color: white;
+            margin: auto;
+        }
+
+        &__info__texto{
+            margin-top: 1em;
+            font-size: 0.9em;
+            margin: auto;
+            text-align: left;
+            color: white;
+        }
+
+        &__img{
+            @include commons.caja-flex (center, 0 auto, none);
+            width: calc(80%/3);
+        }
+
+        &__img__logo{
+            @include commons.caja-flex (center, auto, column);
+            width: 15em;
+        }
+
+        &__text{
+            @include commons.caja-flex (none, auto, row);
+            width: 100%;
+            background-color:black;
+        }
+
+        &__text__cont{
             display: flex;
             width: 80%;
             color: white;
             margin: auto;
         }
 
-        &__logo__img{
-            width: 10%;
-            display: flex;
-            margin: auto;
-            justify-content:flex-start;
-            padding: 0.5em;
-        }
-
-        &__logo__info{
+        &__text__info{
             width: 100%;
             margin: auto;
-            color: black;
-            text-align:end;
+            color: white;
+            text-align:center;
             font-size: 0.7em;
+            padding: 1em;
         }
+}
+
+@media screen and (max-width: 980px) {
+ 
+    .footer{
+        @include commons.caja-flex (center, auto, column);
+        width: 70%;
+        padding: 1em;
+    
+            &__info{
+                width: 100%;
+                text-align: center;
+                margin: auto;
+            }
+    
+            &__info__titulo{
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                color: white;
+                font-size: 1.7em;
+                margin: auto;
+                padding-top: 1em;
+            }
+    
+            &__info__texto{
+                padding-top: 0.5em;
+                padding-bottom: 1em;
+                font-size: 1em;
+                margin: auto;
+                text-align: center;
+                color: white;
+            }
+    
+            &__img{
+                @include commons.caja-flex (center, auto, none);
+                width: 100%;
+                display: none;
+                padding-top: 2em;
+            }
+    
+            &__img__logo{
+                @include commons.caja-flex (center, auto, column);
+                width: 15em;
+            }
+    
+            &__text{
+                @include commons.caja-flex (none, auto, row);
+                width: 100%;
+                background-color:black;
+            }
+    
+            &__text__cont{
+                display: flex;
+                width: 80%;
+                color: white;
+                margin: auto;
+            }
+    
+            &__text__info{
+                width: 100%;
+                margin: auto;
+                color: white;
+                text-align:center;
+                font-size: 0.7em;
+                padding: 1em;
+            }
+    }
+
 }
