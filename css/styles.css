@@ -436,38 +436,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.galeria {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  flex-direction: column;
-  width: 90%;
-  padding: 4em 0;
-}
-.galeria__carousel {
-  width: 70%;
-  margin: auto;
-}
-.galeria__titulo {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  flex-direction: none;
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
-}
-
-#carouselExampleCaptions {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  flex-direction: none;
-}
-
-.carousel-inner {
-  border-radius: 0.7em;
-}
-
 .banner {
   display: flex;
   justify-content: center;
@@ -484,6 +452,86 @@ body {
 }
 .banner__img {
   width: 100%;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: row;
+  width: 80%;
+  height: 45em;
+}
+.galeria__cont1 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: none;
+  width: 35%;
+  height: 100%;
+  padding: 5em 1em 5em 0;
+}
+.galeria__cont2 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+  width: 65%;
+  height: 45em;
+  padding: 5em 0 5em 0;
+}
+.galeria__cont3 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+  padding: 0 0 0.5em 0;
+}
+.galeria__cont4 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+  padding: 0.5em 0 0 0;
+}
+.galeria__img1 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.galeria__img2 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: row;
+  width: 50%;
+  height: 100%;
+  padding: 0 0.5em 0 0;
+  object-fit: cover;
+}
+.galeria__img3 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: row;
+  width: 50%;
+  height: 100%;
+  padding: 0 0 0 0.5em;
+  object-fit: cover;
+}
+.galeria__img4 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* SERVICIOS */
