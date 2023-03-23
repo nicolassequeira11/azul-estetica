@@ -45,7 +45,7 @@
     @include commons.caja-flex (center, -6em auto 0, none);
 	height: 6em;
 	background-color: map-get(commons.$color-header,"color5");
-    background: linear-gradient(0deg, rgb(3, 94, 136) 50%, rgb(0, 65, 95) 100%);
+    background: linear-gradient(0deg, rgb(22, 22, 22) 30%, rgb(0, 0, 0) 100%);
 	position: fixed;
 	z-index: 2000;
     box-shadow: 0em 0.3em 0.7em 0 rgba(32,32,32,0.3);

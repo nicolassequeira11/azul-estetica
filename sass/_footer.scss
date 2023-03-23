@@ -4,7 +4,7 @@
 footer{
     width: 100%;
     background: rgb(0,57,83);
-    background: linear-gradient(180deg, rgb(3, 94, 136) 50%, rgb(0, 65, 95) 100%);
+    background: linear-gradient(180deg, rgb(22, 22, 22) 30%, rgb(0, 0, 0) 100%);
 }
 
 .footer{
@@ -47,20 +47,20 @@ footer{
         &__text{
             @include commons.caja-flex (none, auto, row);
             width: 100%;
-            background-color:black;
+            background-color:white;
         }
 
         &__text__cont{
             display: flex;
             width: 80%;
-            color: white;
+            color: black;
             margin: auto;
         }
 
         &__text__info{
             width: 100%;
             margin: auto;
-            color: white;
+            color: black;
             text-align:center;
             font-size: 0.7em;
             padding: 1em;
