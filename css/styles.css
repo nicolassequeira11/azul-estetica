@@ -347,14 +347,13 @@ body {
 /* HOME */
 .carousel-home {
   display: flex;
-  height: 35em;
   width: 100%;
   margin: auto;
   justify-content: center;
 }
 .carousel-home__img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .servicios {
@@ -445,7 +444,7 @@ body {
   display: flex;
   margin: auto;
   justify-content: center;
-  width: 45%;
+  width: 50%;
 }
 .banner__img {
   width: 100%;
@@ -819,6 +818,9 @@ body {
 .contacto__titulo {
   font-family: "Montserrat", sans-serif;
   font-size: 3em;
+  justify-content: center;
+  text-align: center;
+  padding-top: 1em;
 }
 .contacto__subtitulo {
   font-family: "Montserrat", sans-serif;

@@ -17,14 +17,13 @@ body{
 
 .carousel-home{
     display: flex;
-    height: 35em;
     width: 100%;
     margin: auto;
     justify-content: center;
 
         &__img{
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
 }
 
@@ -99,7 +98,7 @@ body{
             display: flex;
             margin: auto;
             justify-content: center;
-            width: 45%;
+            width: 50%;
         }
 
         &__img{
@@ -329,7 +328,6 @@ body{
         }
 }
 
-
 /* NOSOTROS */
 
 .nosotros{
@@ -421,6 +419,9 @@ body{
         &__titulo{
             font-family: 'Montserrat', sans-serif;
             font-size: 3em;
+            justify-content: center;
+            text-align: center;
+            padding-top: 1em;
         }
 
         &__subtitulo{
