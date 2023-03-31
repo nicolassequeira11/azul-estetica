@@ -64,7 +64,7 @@
         &__link{
             @include commons.caja-flex (none, auto 1em, none);
             color: map-get(commons.$color-header,"color3");
-            font-size: 1em;
+            font-size: 1.1em;
         }
         
         
@@ -72,7 +72,8 @@
             text-decoration: none;
             color: map-get(commons.$color-header,"color3");
             margin: 5px auto 0;
-            font-family: 'Montserrat', sans-serif;        
+            font-family: 'Urbanist', sans-serif;
+            font-weight: 700;   
         }
 
         &__link__texto::after{

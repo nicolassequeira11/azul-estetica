@@ -69,13 +69,14 @@
   margin: auto 1em;
   flex-direction: none;
   color: #ffffff;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 .nav__link__texto {
   text-decoration: none;
   color: #ffffff;
   margin: 5px auto 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
 }
 .nav__link__texto::after {
   content: "";
@@ -205,27 +206,32 @@ footer {
   justify-content: space-between;
   margin: auto;
   flex-direction: none;
-  width: 70%;
-  padding: 1em;
+  width: 60%;
+  padding: 1.5em;
 }
 .footer__info {
-  width: 33.3333333333%;
+  width: 50%;
   text-align: center;
   margin: auto;
-  padding: 2em;
+  padding: 1em;
 }
 .footer__info__titulo {
-  font-family: "Montserrat", sans-serif;
-  text-align: left;
-  color: white;
+  font-family: "Urbanist", sans-serif;
+  text-align: center;
+  color: grey;
   margin: auto;
+  font-weight: 700;
+  font-size: 2em;
+  padding-bottom: 0.5em;
 }
 .footer__info__texto {
   margin-top: 1em;
   font-size: 0.9em;
   margin: auto;
-  text-align: left;
-  color: white;
+  text-align: center;
+  color: grey;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
 }
 .footer__img {
   display: flex;
@@ -247,7 +253,7 @@ footer {
   margin: auto;
   flex-direction: row;
   width: 100%;
-  background-color: white;
+  background-color: black;
 }
 .footer__text__cont {
   display: flex;
@@ -258,10 +264,12 @@ footer {
 .footer__text__info {
   width: 100%;
   margin: auto;
-  color: black;
+  color: grey;
   text-align: center;
   font-size: 0.7em;
   padding: 1em;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 980px) {
@@ -316,7 +324,7 @@ footer {
     margin: auto;
     flex-direction: row;
     width: 100%;
-    background-color: black;
+    background-color: white;
   }
   .footer__text__cont {
     display: flex;
@@ -327,7 +335,7 @@ footer {
   .footer__text__info {
     width: 100%;
     margin: auto;
-    color: white;
+    color: black;
     text-align: center;
     font-size: 0.7em;
     padding: 1em;
@@ -356,14 +364,40 @@ body {
   object-fit: contain;
 }
 
+.titulo {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+}
+.titulo__text {
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  font-size: 3em;
+  padding: 2.5em 0 0.5em 0;
+}
+.titulo__text::after, .titulo ::before {
+  position: absolute;
+  width: 5em;
+  top: 120px;
+}
+.titulo__text:after {
+  content: url("../images/title3.png");
+  left: 100%;
+}
+.titulo__text:before {
+  content: url("../images/title4.png");
+  right: 100%;
+}
+
 .servicios {
   display: flex;
   justify-content: center;
   margin: auto;
   flex-direction: column;
   width: 100%;
-  padding: 4em 0 4em 0;
-  font-family: "Montserrat", sans-serif;
+  padding: 0.5em 0 0 0;
   flex-wrap: wrap;
 }
 .servicios__titulo {
@@ -376,15 +410,20 @@ body {
   display: flex;
   justify-content: center;
   margin: auto;
-  flex-direction: none;
+  flex-direction: row;
   width: 100%;
+  flex-wrap: wrap;
 }
 .servicios__list__cont {
   position: relative;
   width: 26.6666666667%;
-  height: 100%;
-  margin: auto 0.5em;
-  flex-wrap: wrap;
+  height: 10em;
+  margin: 0.5em;
+  cursor: pointer;
+  background: linear-gradient(155deg, rgba(20, 20, 20, 0.9013656488) 0%, rgba(18, 19, 19, 0.9041667692) 100%);
+}
+.servicios__list__cont:hover > .servicios__list__item__img {
+  opacity: 0.6;
 }
 .servicios__list__item__img {
   display: flex;
@@ -394,7 +433,7 @@ body {
   width: 100%;
   height: 10em;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .servicios__list__titulo {
   display: flex;
@@ -403,12 +442,12 @@ body {
   flex-direction: none;
   color: white;
   position: relative;
-  bottom: 3em;
+  bottom: 2.5em;
   opacity: 1;
   text-align: center;
-  font-size: 2em;
-  background: linear-gradient(0deg, rgb(22, 22, 22) 30%, rgb(0, 0, 0) 100%);
-  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
 }
 
 .slogan-1 {
@@ -429,7 +468,8 @@ body {
   font-size: 2.5em;
   color: white;
   padding: 1em 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
 }
 
 .banner {
@@ -438,7 +478,6 @@ body {
   margin: auto;
   flex-direction: none;
   width: 100%;
-  background-color: #005ca9;
 }
 .banner__img-cont {
   display: flex;
@@ -465,7 +504,7 @@ body {
   flex-direction: none;
   width: 35%;
   height: 100%;
-  padding: 5em 1em 5em 0;
+  padding: 0 1em 5em 0;
 }
 .galeria__cont2 {
   display: flex;
@@ -474,7 +513,7 @@ body {
   flex-direction: column;
   width: 65%;
   height: 45em;
-  padding: 5em 0 5em 0;
+  padding: 0 0 5em 0;
 }
 .galeria__cont3 {
   display: flex;
@@ -536,6 +575,7 @@ body {
   margin: auto;
   flex-direction: none;
   width: 100%;
+  padding-bottom: 0.5em;
 }
 .productos__img {
   display: flex;
@@ -545,6 +585,10 @@ body {
   width: 25%;
   height: 12em;
   object-fit: cover;
+}
+.productos__img:hover {
+  background: linear-gradient(0deg, rgb(13, 13, 14) 50%, rgb(0, 0, 0) 100%);
+  opacity: 0.8;
 }
 
 .redes {
@@ -582,6 +626,11 @@ body {
   margin: auto;
   flex-direction: none;
   height: 25em;
+  cursor: pointer;
+}
+.redes__cont:hover {
+  background: linear-gradient(155deg, rgb(221, 221, 221) 0%, rgb(221, 221, 221) 100%);
+  opacity: 0.8;
 }
 .redes__img {
   width: 100%;
@@ -640,18 +689,17 @@ body {
   object-fit: cover;
   width: 100%;
   opacity: 0.8;
-  border-radius: 0.7em;
 }
 .servicios-precios__img__titulo {
   position: absolute;
   color: white;
   width: 100%;
   text-align: center;
-  top: 1.85em;
+  top: 1.3em;
   opacity: 1;
-  font-size: 2em;
-  font-family: "Montserrat", sans-serif;
-  background: linear-gradient(0deg, rgb(22, 22, 22) 30%, rgb(0, 0, 0) 100%);
+  font-size: 2.5em;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
 }
 
 .servicios-items {
@@ -669,6 +717,8 @@ body {
   flex-direction: column;
   width: 100%;
   padding: 0.7em 0.7em;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
 }
 .servicios-items__items-cont {
   display: flex;
@@ -687,6 +737,8 @@ body {
   text-decoration: none;
   padding: 0.5em 0;
   font-size: 0.85em;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
 }
 
 /* PROMOCIONES */
@@ -711,66 +763,26 @@ body {
   justify-content: center;
   margin: auto;
   flex-direction: column;
-  width: 100%;
+  width: 95%;
+}
+.promos__img:hover {
+  transform: scale(1.05);
 }
 
 /* NOSOTROS */
 .nosotros {
   display: flex;
-  justify-content: none;
-  margin: none;
+  justify-content: center;
+  margin: auto;
   flex-direction: column;
-  width: 28.3333333333%;
-  padding: 2em 0;
-}
-.nosotros__img {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  flex-direction: none;
-  position: relative;
-  width: 100%;
-  height: 15em;
-}
-.nosotros__img__img {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  flex-direction: none;
-  object-fit: cover;
-  width: 100%;
-  opacity: 0.2;
-}
-.nosotros__img__titulo {
-  position: absolute;
-  width: 100%;
   text-align: center;
-  color: black;
-  top: 1em;
-  opacity: 1;
-  font-size: 4.5em;
-  font-family: "Montserrat", sans-serif;
-}
-
-.nosotros-titulo {
-  display: flex;
-  justify-content: center;
-  margin: none;
-  flex-direction: none;
-  width: 100%;
-  text-align: center;
-  font-size: 3em;
-  padding: 1em 0 1em 0;
-}
-
-.nosotros-historia {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  flex-direction: none;
   width: 80%;
-  text-align: center;
-  padding: 0 4em 4em 4em;
+  padding: 4em 0 2em 0;
+  font-family: "Urbanist", sans-serif;
+}
+.nosotros__titulo {
+  font-size: 3em;
+  font-weight: 700;
 }
 
 .nosotros-info {
@@ -779,13 +791,14 @@ body {
   margin: auto;
   flex-direction: none;
   text-align: center;
+  font-family: "Urbanist", sans-serif;
 }
 .nosotros-info__cont {
   margin: auto;
   width: 50%;
 }
 .nosotros-info__titulo {
-  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 .nosotros-info__texto {
   padding: 0 4em 0 4em;
@@ -807,23 +820,24 @@ body {
   margin: auto;
   flex-direction: column;
   width: 90%;
+  font-family: "Urbanist", sans-serif;
 }
 .contacto__titulo__cont {
   display: flex;
   justify-content: center;
-  margin: 2em auto 0;
+  margin: 1em auto 0;
   flex-direction: column;
   text-align: center;
 }
 .contacto__titulo {
-  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   font-size: 3em;
   justify-content: center;
   text-align: center;
   padding-top: 1em;
 }
 .contacto__subtitulo {
-  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 .contacto__cont {
   display: flex;
@@ -911,7 +925,7 @@ body {
   font-size: 2em;
   width: 100%;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   background: linear-gradient(0deg, rgb(22, 22, 22) 30%, rgb(0, 0, 0) 100%);
 }
 .contacto__local__info__cont {
@@ -929,6 +943,8 @@ body {
   flex-direction: none;
   width: 100%;
   padding: 0.7em;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
 }
 .contacto__local__map {
   display: flex;
@@ -944,6 +960,10 @@ body {
 }
 
 @media screen and (max-width: 1328px) {
+  .servicios__list__cont {
+    width: 40%;
+    margin: 0.5em;
+  }
   .servicios-cont {
     display: flex;
     width: 100%;
@@ -1059,51 +1079,32 @@ body {
     display: flex;
     justify-content: center;
     margin: auto;
-    flex-direction: none;
+    flex-direction: column;
     width: 100%;
     background-color: #005ca9;
   }
   .banner__img-cont {
     display: flex;
+    flex-direction: column;
     margin: auto;
     justify-content: center;
-    width: 90%;
+    width: 100%;
   }
   .banner__img {
     width: 100%;
   }
-  .servicios {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    padding: 4em 0;
-    font-family: "Montserrat", sans-serif;
-    flex-wrap: wrap;
-  }
-  .servicios__titulo {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto 0.5em;
-    flex-direction: none;
-    font-size: 2.5em;
-  }
-  .servicios__list {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    flex-direction: none;
-    width: 100%;
-    flex-wrap: wrap;
-  }
   .servicios__list__cont {
-    width: 80%;
-    height: 50%;
-    margin: auto 0.5em;
+    min-width: 80%;
+    margin: 0.5em;
   }
-  .servicios__list__item__img {
+  .productos {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: row;
+    width: 100%;
+  }
+  .productos__img {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -1111,22 +1112,55 @@ body {
     width: 100%;
     height: 8em;
     object-fit: cover;
-    border-radius: 0.7em;
   }
-  .servicios__list__titulo {
+  .productos__img:hover {
+    background: linear-gradient(0deg, rgb(13, 13, 14) 50%, rgb(0, 0, 0) 100%);
+    opacity: 0.8;
+  }
+  .redes {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 1.5em;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    padding: 0 0 5em 0;
+  }
+  .redes__cont-logo {
+    display: flex;
+    justify-content: start;
+    margin: auto;
+    flex-direction: none;
+    width: 80%;
+    padding: 5em 0 1em 0;
+  }
+  .redes__img-logo {
+    height: 6em;
+  }
+  .redes__titulo {
+    display: flex;
+    justify-content: start;
+    margin: auto;
+    flex-direction: none;
+    width: 100%;
+    padding-left: 1em;
+    font-size: 1.5em;
+  }
+  .redes__cont {
     display: flex;
     justify-content: center;
     margin: auto;
     flex-direction: none;
-    color: white;
-    position: relative;
-    bottom: 2.5em;
-    opacity: 1;
-    text-align: center;
-    font-size: 2em;
-    background: rgb(0, 57, 83);
-    background: linear-gradient(0deg, rgb(3, 94, 136) 50%, rgb(0, 65, 95) 100%);
-    font-family: "Montserrat", sans-serif;
+    height: 25em;
+    cursor: pointer;
+  }
+  .redes__cont:hover {
+    background: linear-gradient(155deg, rgb(221, 221, 221) 0%, rgb(221, 221, 221) 100%);
+    opacity: 0.8;
+  }
+  .redes__img {
+    width: 100%;
+    object-fit: contain;
   }
   .servicios-cont {
     display: flex;
@@ -1225,6 +1259,21 @@ body {
     text-decoration: none;
     padding: 0.5em 0;
     font-size: 0.85em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .productos {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+  }
+  .productos__img {
+    height: 10em;
+  }
+  .redes {
+    grid-template-columns: auto;
+    row-gap: 1.5em;
   }
 }
 
