@@ -102,18 +102,6 @@ footer{
                 color: white;
             }
     
-            &__img{
-                @include commons.caja-flex (center, auto, none);
-                width: 100%;
-                display: none;
-                padding-top: 2em;
-            }
-    
-            &__img__logo{
-                @include commons.caja-flex (center, auto, column);
-                width: 15em;
-            }
-    
             &__text{
                 @include commons.caja-flex (none, auto, row);
                 width: 100%;

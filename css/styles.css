@@ -323,22 +323,6 @@ footer {
     text-align: center;
     color: white;
   }
-  .footer__img {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    flex-direction: none;
-    width: 100%;
-    display: none;
-    padding-top: 2em;
-  }
-  .footer__img__logo {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    flex-direction: column;
-    width: 15em;
-  }
   .footer__text {
     display: flex;
     justify-content: none;
@@ -1312,21 +1296,23 @@ body {
     display: inline-block;
     position: relative;
     font-weight: 700;
-    font-size: 3em;
+    font-size: 2.5em;
     padding: 1em 0 0.5em 0;
   }
   .titulo__text::after, .titulo ::before {
     position: absolute;
-    width: 5em;
-    top: 50px;
+    top: 45px;
   }
   .titulo__text:after {
     content: url("../images/title3.png");
-    left: 100%;
+    width: 0%;
+    left: 105%;
+    background-color: red;
   }
   .titulo__text:before {
     content: url("../images/title4.png");
-    right: 100%;
+    width: 0%;
+    right: 135%;
   }
   .servicios {
     display: flex;

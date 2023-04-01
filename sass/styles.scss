@@ -849,6 +849,7 @@ body{
 
 @media screen and (max-width:480px) {
 
+
     .productos{
         @include commons.caja-flex (center, auto, column);
     
@@ -856,7 +857,6 @@ body{
                 height: 10em;
             }
     }
-
 
     .redes{
         grid-template-columns: auto;
@@ -885,24 +885,26 @@ body{
                 display: inline-block;
                 position: relative;
                 font-weight: 700;
-                font-size: 3em;
+                font-size: 2.5em;
                 padding: 1em 0 0.5em 0;
             }
     
             &__text::after,::before{
                 position: absolute;
-                width: 5em;
-                top: 50px;
+                top: 45px;
             }
     
             &__text:after{
                 content: url("../images/title3.png");
-                left: 100%;
+                width: 0%;
+                left: 105%;
+                background-color: red;
             }
     
             &__text:before{
                 content: url("../images/title4.png");
-                right: 100%;
+                width: 0%;
+                right: 135%;
             }
     }
     
@@ -959,7 +961,6 @@ body{
     .slogan-1{
         @include commons.caja-flex (center, auto, none);
         width: 100%;
-        
         background: linear-gradient(0deg, rgb(13, 13, 14) 50%, rgb(0, 0, 0) 100%);
     
     
