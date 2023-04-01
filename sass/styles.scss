@@ -41,20 +41,9 @@ body{
             padding: 1em 0 0.5em 0;
         }
 
-        &__text::after,::before{
-            position: absolute;
-            width: 5em;
-            top: 50px;
-        }
-
-        &__text:after{
-            content: url("../images/title3.png");
-            left: 100%;
-        }
-
-        &__text:before{
-            content: url("../images/title4.png");
-            right: 100%;
+        &__img{
+            height: 3em;
+            margin-bottom: 0.5em;
         }
 }
 
@@ -463,7 +452,6 @@ body{
             @include commons.caja-flex (center, 0 auto, column);
             width: 90%;
             background-color: whitesmoke;
-            border-radius: 0.7em;
             padding: 0.5em;
         }
 
@@ -500,7 +488,6 @@ body{
             width: 90%;
             padding: 1em;
             background-color: whitesmoke;
-            border-radius: 0.7em;
         }
 
         &__local__img__cont{
@@ -508,7 +495,6 @@ body{
             position: relative;
             width: 100%;
             height: 5em;
-            border-radius: 0.7em;
             background: linear-gradient(155deg, rgba(20,20,20,0.9013656487985819) 0%, rgba(18,19,19,0.9041667692467612) 100%);
         }
 
@@ -517,7 +503,6 @@ body{
             object-fit:cover;
             width: 100%;
             opacity: 0.8;
-            border-radius: 0.7em;
         }
 
         &__local__img__titulo{
@@ -866,6 +851,7 @@ body{
     .carousel-home{
         display: flex;
         width: 100%;
+        height: auto;
         margin: auto;
         justify-content: center;
     
@@ -888,24 +874,7 @@ body{
                 font-size: 2.5em;
                 padding: 1em 0 0.5em 0;
             }
-    
-            &__text::after,::before{
-                position: absolute;
-                top: 45px;
-            }
-    
-            &__text:after{
-                content: url("../images/title3.png");
-                width: 0%;
-                left: 105%;
-                background-color: red;
-            }
-    
-            &__text:before{
-                content: url("../images/title4.png");
-                width: 0%;
-                right: 135%;
-            }
+
     }
     
     .servicios{
@@ -1005,5 +974,126 @@ body{
         height: 13em;
         object-fit: cover;
     }
+ 
     
+    /* CONTACTO */
+
+.contacto{
+    @include commons.caja-flex (center, auto, column);
+    width: 100%;
+    font-family: commons.$font-stack;
+
+        &__titulo__cont{
+            @include commons.caja-flex (center, 1em auto 0, column);
+            text-align: center;
+        }
+
+        &__subtitulo{
+            font-weight: 600;
+            width: 80%;
+            margin: auto;
+        }
+
+        &__cont{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+        }
+
+        &__form{
+            @include commons.caja-flex (none, 1em auto 0, column);
+            width: 100%;
+            padding: 1em;
+        }
+
+        &__form__cont{
+            @include commons.caja-flex (center, 0 auto, column);
+            width: 100%;
+            background-color: whitesmoke;
+            padding: 0.5em;
+        }
+
+        &__form__input{
+            display: flex;
+            padding: 0.5em;
+            margin: 0.5em;
+            border: none;
+        }
+
+        &__form__textarea{
+            display: flex;
+            padding: 1em;
+            margin: 0.5em;
+            border: none;
+        }
+
+        &__form__button{
+            @include commons.caja-flex (center, 0.5em , column);
+            padding: 1em;
+            background-color: white;
+            border: none;
+        }
+
+        &__local{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 100%;
+            padding: 1em;
+        }
+
+        &__local__cont{
+            @include commons.caja-flex (center, auto, column);
+            width: 100%;
+            padding: 1em;
+            background-color: whitesmoke;
+        }
+
+        &__local__img__cont{
+            @include commons.caja-flex (center, auto, none);
+            position: relative;
+            width: 100%;
+            height: 5em;
+            background: linear-gradient(155deg, rgba(20,20,20,0.9013656487985819) 0%, rgba(18,19,19,0.9041667692467612) 100%);
+        }
+
+        &__local__img{
+            @include commons.caja-flex (center, 0 auto, none);
+            object-fit:cover;
+            width: 100%;
+            opacity: 0.8;
+        }
+
+        &__local__img__titulo{
+            position: absolute;
+            color: white;
+            top: 0.5em;
+            font-size: 2.2em;
+            width: 100%;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        &__local__info__cont{
+            @include commons.caja-flex (center, auto, column);
+            width: 100%;
+            padding: 1em;
+        }
+
+        &__local__info__texto{
+            @include commons.caja-flex (none, auto, none);
+            width: 100%;
+            padding: 0.7em;
+            font-family: commons.$font-stack;
+            font-weight: 400;
+        }
+
+        &__local__map{
+            @include commons.caja-flex (center, auto, none);
+            width: 100%;
+            height: 15em;
+        }
+}
+
 }
