@@ -11,6 +11,7 @@ footer{
     @include commons.caja-flex (space-between, auto, none);
     width: 60%;
     padding: 1.5em;
+    font-family: commons.$font-stack;
 
         &__info{
             width: calc(100%/2);
@@ -20,7 +21,6 @@ footer{
         }
 
         &__info__titulo{
-            font-family: 'Urbanist', sans-serif;
             text-align: center;
             color: grey;
             margin: auto;
@@ -35,7 +35,6 @@ footer{
             margin: auto;
             text-align: center;
             color: grey;
-            font-family: 'Urbanist', sans-serif;
             font-weight: 600;
         }
 
@@ -69,7 +68,6 @@ footer{
             text-align:center;
             font-size: 0.7em;
             padding: 1em;
-            font-family: 'Urbanist', sans-serif;
             font-weight: 600;
         }
 }
@@ -88,7 +86,6 @@ footer{
             }
     
             &__info__titulo{
-                font-family: 'Montserrat', sans-serif;
                 text-align: center;
                 color: white;
                 font-size: 1.7em;
