@@ -974,7 +974,61 @@ body{
         height: 13em;
         object-fit: cover;
     }
+
+    // PROMOCIONES
+
+    .promos{
+        grid-template-columns: auto;
+    
+            &__cont{
+                @include commons.caja-flex (center, auto, column);
+            }
+    
+            &__img{
+                @include commons.caja-flex (center, auto, column);
+                width: 80%;
+            }
+    }
+    
  
+    // NOSOTROS
+
+    .nosotros{
+        @include commons.caja-flex (center, auto, column);
+        text-align: center;
+        width: 80%;
+        padding: 0 0 2em 0;
+        font-family: commons.$font-stack;
+    }
+    
+    .nosotros-info{
+        @include commons.caja-flex (center, auto, column);
+
+            &__mobile{
+                flex-direction: column-reverse;
+            }
+    
+            &__cont{
+                width: 100%;
+                padding: 2.5em 0 2em 0;
+            }
+    
+            &__titulo{
+                font-weight: 600;
+            }
+    
+            &__texto{
+                padding: 0 4em 0 4em;
+            }
+    
+            &__img__cont{
+                width: 100%;
+            }
+    
+            &__img{
+                height: 15em;
+            }
+    }
     
     /* CONTACTO */
 
