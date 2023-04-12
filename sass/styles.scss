@@ -391,32 +391,36 @@ body{
 }
 
 .nosotros-info{
-    @include commons.caja-flex (center, auto, none);
-    text-align: center;
+    @include commons.caja-flex (center, auto, column);
     font-family: commons.$font-stack;
+    width: 70%;
+    padding: 1.5em;
 
         &__cont{
             margin: auto;
-            width: 50%;
+            width: 100%;
         }
 
         &__titulo{
+            margin: auto;
+            width: 100%;
             font-weight: 600;
+            padding-left: 0.2em;
         }
 
         &__texto{
-            padding: 0 4em 0 4em;
         }
 
         &__img__cont{
-            width: 50%;
+            display: flex;
+            flex-direction: row;
             justify-content: center;
         }
 
         &__img{
-            width: 100%;
-            height: 30em;
+            width: 10%;
             object-fit: cover;
+            padding: 1em;
         }
 }
 
@@ -998,14 +1002,13 @@ body{
     
     .nosotros-info{
         @include commons.caja-flex (center, auto, column);
-
-            &__mobile{
-                flex-direction: column-reverse;
-            }
+        font-family: commons.$font-stack;
+        width: 90%;
+        padding: 1.5em;
     
             &__cont{
+                margin: auto;
                 width: 100%;
-                padding: 2.5em 0 2em 0;
             }
     
             &__titulo{
@@ -1013,15 +1016,17 @@ body{
             }
     
             &__texto{
-                padding: 0 4em 0 4em;
             }
     
             &__img__cont{
+                justify-content: center;
                 width: 100%;
             }
     
             &__img{
-                height: 15em;
+                width: 20%;
+                object-fit: cover;
+                padding: 1em;
             }
     }
     
