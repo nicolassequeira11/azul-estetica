@@ -36,7 +36,7 @@
     background: linear-gradient(0deg, rgb(22, 22, 22) 30%, rgb(0, 0, 0) 100%);
 	position: fixed;
 	z-index: 2000;
-    box-shadow: 0em 0.3em 0.7em 0 rgba(32,32,32,0.3);
+    box-shadow: 0em 0.2em 0.7em 0 rgba(32,32,32,0.3);
 
         &{
             @include commons.caja-flex (none, none, none);
@@ -61,11 +61,12 @@
             color: map-get(commons.$color-header,"color3");
             margin: 2px auto 0;
             font-family: commons.$font-stack;
-            font-weight: 600; 
+            font-weight: 400;
+            color: #c0c0b4;
         }
 
         &__link__texto:hover{
-            color:rgb(218, 218, 218);
+            color:white;
         }
 
         
