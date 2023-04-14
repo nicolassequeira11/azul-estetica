@@ -3,25 +3,13 @@
 
 .logo{ 
     height: 100%;
+    padding: 0.6em;
 
         &__img{
             @include commons.caja-flex (none, auto, none);
             height: 100%;
             align-items: center;
-            padding: 20px 0;
-            animation-name: logo;
-            animation-duration: 1s;
         }
-    
-    @keyframes logo{
-        0%{
-            opacity: 0%;
-        }
-        100%{
-        
-            opacity: 100%;
-        }
-    }
 }
 
 .ham{
@@ -42,8 +30,8 @@
 }
 
 .nav{
-    @include commons.caja-flex (center, -6em auto 0, none);
-	height: 6em;
+    @include commons.caja-flex (center, -4em auto 0, none);
+	height: 4em;
 	background-color: map-get(commons.$color-header,"color5");
     background: linear-gradient(0deg, rgb(22, 22, 22) 30%, rgb(0, 0, 0) 100%);
 	position: fixed;
@@ -64,40 +52,23 @@
         &__link{
             @include commons.caja-flex (none, auto 1em, none);
             color: map-get(commons.$color-header,"color3");
-            font-size: 1.1em;
+            font-size: 0.8em;
         }
         
         
         &__link__texto{
             text-decoration: none;
             color: map-get(commons.$color-header,"color3");
-            margin: 5px auto 0;
-            font-size: 1.1em;
+            margin: 2px auto 0;
             font-family: commons.$font-stack;
-            font-weight: 400;   
+            font-weight: 600; 
         }
 
-        &__link__texto::after{
-            content: "";
-            display: flex;
-            position: relative;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            height: 2px;
-            width: 100%;
-            background-color: map-get(commons.$color-header,"color3");
-            /*animacion de derecha a izquierda*/
-            transform-origin: right;
-            transform: scaleX(0);
-            transition: transform 0.2s ease-in-out;
+        &__link__texto:hover{
+            color:rgb(218, 218, 218);
         }
 
-        &__link__texto:hover::after{
-            /*animacion de derecha a izquierda*/
-            transform-origin: left;
-            transform: scaleX(1);
-          }
+        
 
 }
 
@@ -112,6 +83,7 @@
 
         &__icon{
             @include commons.caja-flex (none, auto, none);
+            height: 1.5em;
         }
 }
 

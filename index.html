@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700;800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <title>Azul Estética</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="shortcut icon" href="./images/icon.png">
 </head>
 <body>
@@ -18,18 +20,34 @@
     <header id="nav">
 
 		<nav class="nav">
-			<div class="logo"><a href="index.html" class="logo__link"><img src="./images/azul-white.png" class="logo__img" alt="Logo Chorren Burgers"></a></div>
+			<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="25" data-aos-offset="0" class="logo"><a href="index.html" class="logo__link"><img src="./images/azul-white.png" class="logo__img" alt="Logo Chorren Burgers"></a></div>
 				<ul class="nav__links">
-					<li class="nav__link"><a class="nav__link__texto" href="index.html">Inicio</a></li>
-					<li class="nav__link"><a class="nav__link__texto" href="html/servicios.html">Servicios</a></li>
-					<li class="nav__link"><a class="nav__link__texto" href="html/promociones.html">Promociones</a></li>
-					<li class="nav__link"><a class="nav__link__texto" href="html/nosotros.html">Nosotros</a></li>
-					<li class="nav__link"><a class="nav__link__texto" href="html/contacto.html">Contacto</a></li>
+
+					<li data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="50" data-aos-offset="0"
+						class="nav__link"><a class="nav__link__texto" href="index.html">Inicio</a></li>
+
+					<li data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0"
+						class="nav__link"><a class="nav__link__texto" href="html/servicios.html">Servicios</a></li>
+
+					<li data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="150" data-aos-offset="0"
+						class="nav__link"><a class="nav__link__texto" href="html/promociones.html">Promociones</a></li>
+
+					<li data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0"
+						class="nav__link"><a class="nav__link__texto" href="html/nosotros.html">Nosotros</a></li>
+
+					<li data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="250" data-aos-offset="0"
+						class="nav__link"><a class="nav__link__texto" href="html/contacto.html">Contacto</a></li>
+
 
 						<div class="nav-icon">
-							<a class="nav-icon__cont-icon" href="https://www.instagram.com/azulestetica/?hl=es" target="_blank"><img class="nav-icon__icon" src="./images/icon/icon-instagram.png" alt=""></a>
-							<a class="nav-icon__cont-icon" href="https://www.facebook.com/azulesteticaintegral" target="_blank"><img class="nav-icon__icon" src="./images/icon/icon-facebook.png" alt=""></a>
-							<a class="nav-icon__cont-icon" href=""><img class="nav-icon__icon" src="./images/icon/icon-instagram.png" alt=""></a>
+							<a class="nav-icon__cont-icon" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+								href="https://www.instagram.com/azulestetica/?hl=es" target="_blank"><img class="nav-icon__icon" src="./images/icon/icon-instagram.png" alt=""></a>
+							
+							<a class="nav-icon__cont-icon" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="350" data-aos-offset="0"
+								href="https://www.facebook.com/azulesteticaintegral" target="_blank"><img class="nav-icon__icon" src="./images/icon/icon-facebook.png" alt=""></a>
+							
+							<a class="nav-icon__cont-icon" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400" data-aos-offset="0"
+								href=""><img class="nav-icon__icon" src="./images/icon/icon-instagram.png" alt=""></a>
 						</div>
 
 				</ul>
@@ -46,134 +64,71 @@
         <video class="carousel-home__img" src="./videos/loreal-curl-expression.mp4" autoplay muted loop alt="Azul Estetica"></video>
     </div>
 
-	<div class="banner">
-		<div class="banner__img-cont">
-			<img class="banner__img" src="./images/azul-estetica-brou.png" alt="">
-			<img class="banner__img" src="./images/azul-estetica-mercadopago.png" alt="">
-		</div>
-	</div>
+	<section class="servicio">
 
-	<section class="servicios">
+		<div class="servicio__cont"><img src="./images/servicios/peluqueria.png" alt="" class="servicio__img"></div>
+		<div class="servicio__cont"><img src="./images/servicios/depilacion.png" alt="" class="servicio__img"></div>
+		<div class="servicio__cont"><img src="./images/servicios/maquillaje.png" alt="" class="servicio__img"></div>
+		<div class="servicio__cont"><img src="./images/servicios/manos.png" alt="" class="servicio__img"></div>
 
-		<div class="titulo">
-			<img class="titulo__img" src="./images/title4.png" alt="">
-			<h2 class="titulo__text">Servicios</h2>
-			<img class="titulo__img" src="./images/title3.png" alt="">
-		</div>
-
-		<div class="servicios__list">
-
-			<div class="servicios__list__cont">
-				<img class="servicios__list__item__img" src="./images/servicios/peluqueria.jpg" alt="">
-				<h2 class="servicios__list__titulo">Peluquería</h2>
-			</div>
-
-			<div class="servicios__list__cont">
-				<img class="servicios__list__item__img" src="./images/servicios/pestañas.jpg" alt="">
-				<h2 class="servicios__list__titulo">Pestañas</h2>
-			</div>
-
-			<div class="servicios__list__cont">
-				<img class="servicios__list__item__img" src="./images/servicios/maquillaje.jpg" alt="">
-				<h2 class="servicios__list__titulo">Maquillaje</h2>
-			</div>
-
-			<div class="servicios__list__cont">
-				<img class="servicios__list__item__img" src="./images/servicios/manos.jpg" alt="">
-				<h2 class="servicios__list__titulo">Manos y Pies</h2>
-			</div>
-
-			<div class="servicios__list__cont">
-				<img class="servicios__list__item__img" src="./images/servicios/depilacion.jpg" alt="">
-				<h2 class="servicios__list__titulo">Depilación</h2>
-			</div>
-
-			<div class="servicios__list__cont">
-				<img class="servicios__list__item__img" src="./images/servicios/cosmetologia.jpg" alt="">
-				<h2 class="servicios__list__titulo">Cosmetología</h2>
-			</div>
-		</div>
 	</section>
 	
 	<section>
 
-		<div class="titulo">
-			<img class="titulo__img" src="./images/title4.png" alt="">
-			<h2 class="titulo__text">Marcas</h2>
-			<img class="titulo__img" src="./images/title3.png" alt="">
-		</div>
-
-		<div class="productos">
-			<img class="productos__img" src="./images/productos/kerastase.jpg" alt="">
-			<img class="productos__img" src="./images/productos/loreal.jpg" alt="">
-			<img class="productos__img" src="./images/productos/moroccanoil.jpg" alt="">
-			<img class="productos__img" src="./images/productos/redken.jpg" alt="">
+		<div class="marcas">
+			<div class="marcas__cont" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0"><img class="marcas__img" src="./images/productos/kerastase.png" alt=""></div>
+			<div class="marcas__cont" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="250" data-aos-offset="0"><img class="marcas__img" src="./images/productos/loreal.png" alt=""></div>
+			<div class="marcas__cont" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"><img class="marcas__img" src="./images/productos/redken.png" alt=""></div>
+			<div class="marcas__cont" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="350" data-aos-offset="0"><img class="marcas__img" src="./images/productos/matrix.png" alt=""></div>
 		</div>
 
 	</section>
 
 	<section>
-
-		<div class="titulo">
-			<img class="titulo__img" src="./images/title4.png" alt="">
-			<h2 class="titulo__text">Galeria</h2>
-			<img class="titulo__img" src="./images/title3.png" alt="">
-		</div>
-
-		<div class="galeria">
-
-			<div class="galeria__cont1">
-				<img class="galeria__img1" src="./images/carousel/azul-estetica-4.jpg" alt="">
+		
+		<div class="productos">
+			<div class="productos__cont1"> <img src="./images/productos/Blond Absolu/kerastase-productos.png" alt="" class="productos__cont1__img"></div>
+			<div class="productos__cont2">
+				<figure class="productos__item">
+					<img src="./images/productos/Blond Absolu/Blond-Absolu-Bain-Lumiere.png" alt="" class="productos__item__img">
+					<h2 class="productos__item__titulo">Bain Lumiere</h2>
+					<p class="productos__item__precio">$1500 UYU</p>
+					<button class="productos__item__boton">Consultar Stock</button>
+				</figure>
+				<figure class="productos__item">
+					<img src="./images/productos/Blond Absolu/Blond-Absolu-Cicaflash.png" alt="" class="productos__item__img">
+					<h2 class="productos__item__titulo">Cicaflash</h2>
+					<p class="productos__item__precio">$1500 UYU</p>
+					<button class="productos__item__boton">Consultar Stock</button>
+				</figure>
+				<figure class="productos__item">
+					<img src="./images/productos/Blond Absolu/Blond-Absolu-Masque.png" alt="" class="productos__item__img">
+					<h2 class="productos__item__titulo">Masque Ultra Violet</h2>
+					<p class="productos__item__precio">$1500 UYU</p>
+					<button class="productos__item__boton">Consultar Stock</button>
+				</figure>
+				<figure class="productos__item">
+					<img src="./images/productos/Blond Absolu/Blond-Absolu-Cicaplasme.png" alt="" class="productos__item__img">
+					<h2 class="productos__item__titulo">Cicaplasme</h2>
+					<p class="productos__item__precio">$1500 UYU</p>
+					<button class="productos__item__boton">Consultar Stock</button>
+				</figure>
 			</div>
-
-			<div class="galeria__cont2">
-				<div class="galeria__cont3">
-					<img class="galeria__img2" src="./images/carousel/azul-estetica-1.png" alt="">
-					<img class="galeria__img3" src="./images/azul-estetica-ciudad-vieja.jpg" alt="">
-				</div>
-
-				<div class="galeria__cont4">
-					<img class="galeria__img4" src="./images/carousel/azul-estetica-3.png" alt="">
-				</div>
-			</div>
-
 		</div>
 
 	</section>
 
-	<div id="carouselExample" class="carousel slide">
-		<div class="carousel-inner">
-		  <div class="carousel-item active">
-			<img src="./images/carousel/azul-estetica-1.png" class="carousel-img" class="d-block w-100" alt="...">
-		  </div>
-		  <div class="carousel-item">
-			<img src="./images/azul-estetica-ciudad-vieja.jpg" class="carousel-img" class="d-block w-100" alt="...">
-		  </div>
-		  <div class="carousel-item">
-			<img src="./images/carousel/azul-estetica-3.png" class="carousel-img" class="d-block w-100" alt="...">
-		  </div>
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		  <span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		  <span class="visually-hidden">Next</span>
-		</button>
-	  </div>
-
 	<div class="slogan-1">
-		<p class="slogan-1__texto">Cuidar de sí mismo no es un gasto es una inversión</p>
+		<p class="slogan-1__texto" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0">Cuidar de sí mismo no es un gasto es una inversión</p>
 	</div>
 
 	<div class="redes__cont-logo"><img class="redes__img-logo" src="./images/redes/logo-insta.PNG" alt=""><p class="redes__titulo">azulestetica</p></div>
 	<section class="redes">
-		<div class="redes__cont"><img class="redes__img" src="./images/redes/redes-azul-estetica-1.png" alt=""></div>
-		<div class="redes__cont"><img class="redes__img" src="./images/redes/redes-azul-estetica-2.png" alt=""></div>
-		<div class="redes__cont"><img class="redes__img" src="./images/redes/redes-azul-estetica-3.png" alt=""></div>
-		<div class="redes__cont"><img class="redes__img" src="./images/redes/redes-azul-estetica-4.png" alt=""></div>
-		<div class="redes__cont"><img class="redes__img" src="./images/redes/redes-azul-estetica-5.png" alt=""></div>
+		<a data-aos="flip-left" data-aos-delay="200" href="https://www.instagram.com/azulestetica/" target="_blank"><div class="redes__cont"><img class="redes__img" src="./images/redes/redes-azul-estetica-1.png" alt=""></div></a>
+		<a data-aos="flip-left" data-aos-delay="200" href="https://www.instagram.com/azulestetica/" target="_blank"><div class="redes__cont"><img class="redes__img" src="./images/redes/redes-azul-estetica-2.png" alt=""></div></a>
+		<a data-aos="flip-left" data-aos-delay="200" href="https://www.instagram.com/azulestetica/" target="_blank"><div class="redes__cont"><img class="redes__img" src="./images/redes/redes-azul-estetica-3.png" alt=""></div></a>
+		<a data-aos="flip-left" data-aos-delay="200" href="https://www.instagram.com/azulestetica/" target="_blank"><div class="redes__cont"><img class="redes__img" src="./images/redes/redes-azul-estetica-4.png" alt=""></div></a>
+		<a data-aos="flip-left" data-aos-delay="200" href="https://www.instagram.com/azulestetica/" target="_blank"><div class="redes__cont"><img class="redes__img" src="./images/redes/redes-azul-estetica-5.png" alt=""></div></a>
 
 	</section>
 
@@ -187,9 +142,21 @@
 
 			<div class="footer__info">
 				<h3 class="footer__info__titulo">Ciudad Vieja</h3>
-					<p class="footer__info__texto"><i class="bi bi-geo-alt-fill"></i>Peatonal Sarandí 686 <br><i class="bi bi-clock-fill"></i> Lunes a Viernes 8 a 18:30hs / Sábado: 8 a 14hs. <br><i class="bi bi-telephone-fill"></i>Tel: 2916 7347</p>
+					<p class="footer__info__texto"><i class="bi bi-geo-alt-fill"></i>Peatonal Sarandí 686 <br><i class="bi bi-clock-fill"></i> Lunes a Viernes 8 a 18:30hs / Sábado: 10 a 14hs. <br><i class="bi bi-telephone-fill"></i>Tel: 2916 7347</p>
 			</div>
 		</div>
+
+		<div class="footer__payments">
+            <div class="footer__payments__cont"><img src="../images/payments/visa.svg" alt="" class="footer__payments__img"></div>
+            <div class="footer__payments__cont"><img src="../images/payments/master.svg" alt="" class="footer__payments__img"></div>
+            <div class="footer__payments__cont"><img src="../images/payments/oca.svg" alt="" class="footer__payments__img"></div>
+            <div class="footer__payments__cont"><img src="../images/payments/scotiabank.svg" alt="" class="footer__payments__img"></div>
+            <div class="footer__payments__cont"><img src="../images/payments/ebrou.svg"" class="footer__payments__img"></div>
+            <div class="footer__payments__cont"><img src="../images/payments/anda.svg"" class="footer__payments__img"></div>
+            <div class="footer__payments__cont"><img src="../images/payments/cabal.svg" alt="" class="footer__payments__img"></div>
+            <div class="footer__payments__cont"><img src="../images/payments/bbvanet.svg" alt="" class="footer__payments__img"></div>
+            <div class="footer__payments__cont"><img src="../images/payments/creditel.svg" alt="" class="footer__payments__img"></div>
+        </div>
 
 		<div class="footer__text">
 			<div class="footer__text__cont">
@@ -199,6 +166,11 @@
 	</footer>
 
 	<script src="js/menu.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script>
+		AOS.init();
+	  </script>
+
 </body>
 </html>

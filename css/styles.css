@@ -1,6 +1,7 @@
 /* COLORS */
 .logo {
   height: 100%;
+  padding: 0.6em;
 }
 .logo__img {
   display: flex;
@@ -9,17 +10,6 @@
   flex-direction: none;
   height: 100%;
   align-items: center;
-  padding: 20px 0;
-  animation-name: logo;
-  animation-duration: 1s;
-}
-@keyframes logo {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
 }
 
 .ham {
@@ -42,9 +32,9 @@
 .nav {
   display: flex;
   justify-content: center;
-  margin: -6em auto 0;
+  margin: -4em auto 0;
   flex-direction: none;
-  height: 6em;
+  height: 4em;
   background-color: #080808;
   background: linear-gradient(0deg, rgb(22, 22, 22) 30%, rgb(0, 0, 0) 100%);
   position: fixed;
@@ -69,35 +59,17 @@
   margin: auto 1em;
   flex-direction: none;
   color: #ffffff;
-  font-size: 1.1em;
+  font-size: 0.8em;
 }
 .nav__link__texto {
   text-decoration: none;
   color: #ffffff;
-  margin: 5px auto 0;
-  font-size: 1.1em;
-  font-family: "Urbanist", sans-serif;
-  font-weight: 400;
+  margin: 2px auto 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
-.nav__link__texto::after {
-  content: "";
-  display: flex;
-  position: relative;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background-color: #ffffff;
-  /*animacion de derecha a izquierda*/
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 0.2s ease-in-out;
-}
-.nav__link__texto:hover::after {
-  /*animacion de derecha a izquierda*/
-  transform-origin: left;
-  transform: scaleX(1);
+.nav__link__texto:hover {
+  color: rgb(218, 218, 218);
 }
 
 .nav-icon {
@@ -119,6 +91,7 @@
   justify-content: none;
   margin: auto;
   flex-direction: none;
+  height: 1.5em;
 }
 
 @media screen and (max-width: 1100px) {
@@ -229,8 +202,6 @@
 }
 footer {
   width: 100%;
-  background: rgb(0, 57, 83);
-  background: linear-gradient(180deg, rgb(22, 22, 22) 30%, rgb(0, 0, 0) 100%);
 }
 
 .footer {
@@ -238,9 +209,10 @@ footer {
   justify-content: space-between;
   margin: auto;
   flex-direction: none;
-  width: 60%;
+  width: 82%;
   padding: 1.5em;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
+  border-top: 1px solid black;
 }
 .footer__info {
   width: 50%;
@@ -250,19 +222,19 @@ footer {
 }
 .footer__info__titulo {
   text-align: center;
-  color: grey;
+  color: black;
   margin: auto;
-  font-weight: 700;
-  font-size: 2em;
+  font-weight: 800;
+  font-size: 1.2em;
   padding-bottom: 0.5em;
 }
 .footer__info__texto {
   margin-top: 1em;
-  font-size: 0.9em;
+  font-size: 0.7em;
   margin: auto;
   text-align: center;
-  color: grey;
-  font-weight: 600;
+  color: black;
+  font-weight: 400;
 }
 .footer__img {
   display: flex;
@@ -295,11 +267,29 @@ footer {
 .footer__text__info {
   width: 100%;
   margin: auto;
-  color: grey;
+  color: rgb(218, 218, 218);
   text-align: center;
   font-size: 0.7em;
   padding: 1em;
-  font-weight: 600;
+  font-weight: 400;
+}
+.footer__payments {
+  margin: auto;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.footer__payments__cont {
+  display: flex;
+  width: 100%;
+  margin: 0.5em;
+  padding: 0.2em;
+}
+.footer__payments__img {
+  width: 100%;
+  height: 30px;
+  padding: 10%;
 }
 
 @media screen and (max-width: 980px) {
@@ -358,11 +348,18 @@ footer {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
-  margin-top: 6em;
+  margin-top: 4em;
 }
 
 /* HOME */
@@ -374,7 +371,7 @@ body {
 }
 .carousel-home__img {
   width: 100%;
-  height: 40em;
+  height: 35em;
   object-fit: cover;
 }
 
@@ -382,12 +379,12 @@ body {
   width: 100%;
   justify-content: center;
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .titulo__text {
   display: inline-block;
   position: relative;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 3em;
   padding: 1em 0 0.5em 0;
 }
@@ -396,63 +393,20 @@ body {
   margin-bottom: 0.5em;
 }
 
-.servicios {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  flex-direction: column;
-  width: 100%;
-  padding: 0.5em 0 0 0;
-  flex-wrap: wrap;
-}
-.servicios__titulo {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  flex-direction: none;
-}
-.servicios__list {
+.servicio {
   display: flex;
   justify-content: center;
   margin: auto;
   flex-direction: row;
   width: 100%;
-  flex-wrap: wrap;
+  padding: 0 0.2em 0 0.2em;
 }
-.servicios__list__cont {
-  position: relative;
-  width: 26.6666666667%;
-  height: 10em;
-  margin: 0.5em;
-  cursor: pointer;
-  background: linear-gradient(155deg, rgba(20, 20, 20, 0.9013656488) 0%, rgba(18, 19, 19, 0.9041667692) 100%);
+.servicio__cont {
+  width: 25%;
+  padding: 0.4em 0.2em 0.4em 0.2em;
 }
-.servicios__list__cont:hover > .servicios__list__item__img {
-  opacity: 0.6;
-}
-.servicios__list__item__img {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  flex-direction: none;
+.servicio__img {
   width: 100%;
-  height: 10em;
-  object-fit: cover;
-  opacity: 0.9;
-}
-.servicios__list__titulo {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  flex-direction: none;
-  color: white;
-  position: relative;
-  bottom: 2.5em;
-  opacity: 1;
-  text-align: center;
-  font-size: 2.5em;
-  font-family: "Urbanist", sans-serif;
-  font-weight: 700;
 }
 
 .slogan-1 {
@@ -473,7 +427,7 @@ body {
   font-size: 2.5em;
   color: white;
   padding: 1em 0;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 
@@ -578,26 +532,94 @@ body {
   display: none;
 }
 
-.productos {
+.marcas {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: none;
+  width: 95%;
+  padding: 3em 0 3em 0;
+}
+.marcas__cont {
+  width: 100%;
+  padding: 1em;
+}
+.marcas__img {
   display: flex;
   justify-content: center;
   margin: auto;
   flex-direction: none;
   width: 100%;
-  padding-bottom: 0.5em;
+  object-fit: cover;
 }
-.productos__img {
+
+.productos {
   display: flex;
   justify-content: center;
   margin: auto;
-  flex-direction: none;
+  flex-direction: row;
+  width: 90%;
+  padding: 2em 0 3em 0;
+  font-family: "Poppins", sans-serif;
+}
+.productos__cont1 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: row;
   width: 25%;
-  height: 12em;
+  margin-right: 1em;
+}
+.productos__cont1__img {
+  width: 100%;
+  height: 22em;
   object-fit: cover;
 }
-.productos__img:hover {
-  background: linear-gradient(0deg, rgb(13, 13, 14) 50%, rgb(0, 0, 0) 100%);
-  opacity: 0.8;
+.productos__cont2 {
+  display: grid;
+  width: 100%;
+  gap: 0.5em;
+  margin: auto;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.productos__item {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+  line-height: 1em;
+  width: 100%;
+  padding-bottom: 1em;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.productos__item:hover > .productos__item__img {
+  transform: scale(1.1);
+}
+.productos__item__img {
+  width: 100%;
+  transition: all 0.5s;
+}
+.productos__item__titulo {
+  width: 100%;
+  padding-left: 1em;
+  font-size: 0.8em;
+}
+.productos__item__precio {
+  width: 100%;
+  padding-left: 0.8em;
+}
+.productos__item__boton {
+  width: 90%;
+  margin: auto;
+  font-size: 0.8em;
+  padding: 1em;
+  border: 1px solid black;
+  background-color: white;
+}
+.productos__item__boton:hover {
+  border: 2px solid black;
 }
 
 .redes {
@@ -705,7 +727,7 @@ body {
   top: 1.3em;
   opacity: 1;
   font-size: 2.5em;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 
@@ -726,7 +748,7 @@ body {
   width: 100%;
   text-align: center;
   padding: 1.7em 0.7em;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 .servicios-items__items-cont {
@@ -748,7 +770,7 @@ body {
   padding: 0.5em 0;
   text-align: left;
   font-size: 0.85em;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 
@@ -789,7 +811,7 @@ body {
   text-align: center;
   width: 80%;
   padding: 0 0 2em 0;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .nosotros-info {
@@ -797,7 +819,7 @@ body {
   justify-content: center;
   margin: auto;
   flex-direction: column;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 70%;
   padding: 1.5em;
 }
@@ -829,7 +851,7 @@ body {
   margin: auto;
   flex-direction: column;
   width: 90%;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .contacto__titulo__cont {
   display: flex;
@@ -839,8 +861,9 @@ body {
   text-align: center;
 }
 .contacto__subtitulo {
-  font-weight: 600;
-  margin: -1em 0 1em 0;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin: -2em 0 0 0;
 }
 .contacto__cont {
   display: flex;
@@ -869,12 +892,14 @@ body {
   padding: 0.5em;
   margin: 0.5em;
   border: none;
+  font-size: 0.8em;
 }
 .contacto__form__textarea {
   display: flex;
   padding: 1em;
   margin: 0.5em;
   border: none;
+  font-size: 0.8em;
 }
 .contacto__form__button {
   display: flex;
@@ -943,7 +968,8 @@ body {
   flex-direction: none;
   width: 100%;
   padding: 0.7em;
-  font-family: "Urbanist", sans-serif;
+  font-size: 0.8em;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 .contacto__local__map {
@@ -1020,7 +1046,7 @@ body {
     top: 1.35em;
     opacity: 1;
     font-size: 2.5em;
-    font-family: "Urbanist", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   .servicios-items {
     display: flex;
@@ -1213,7 +1239,7 @@ body {
     top: 1.35em;
     opacity: 1;
     font-size: 2.5em;
-    font-family: "Urbanist", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   .servicios-items {
     display: flex;
@@ -1283,7 +1309,7 @@ body {
     width: 100%;
     justify-content: center;
     text-align: center;
-    font-family: "Urbanist", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   .titulo__text {
     display: inline-block;
@@ -1347,7 +1373,7 @@ body {
     opacity: 1;
     text-align: center;
     font-size: 2.5em;
-    font-family: "Urbanist", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
   }
   .slogan-1 {
@@ -1368,7 +1394,7 @@ body {
     font-size: 1.5em;
     color: white;
     padding: 1em 0;
-    font-family: "Urbanist", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
   }
   .banner {
@@ -1422,14 +1448,14 @@ body {
     text-align: center;
     width: 80%;
     padding: 0 0 2em 0;
-    font-family: "Urbanist", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   .nosotros-info {
     display: flex;
     justify-content: center;
     margin: auto;
     flex-direction: column;
-    font-family: "Urbanist", sans-serif;
+    font-family: "Poppins", sans-serif;
     width: 90%;
     padding: 1.5em;
   }
@@ -1456,7 +1482,7 @@ body {
     margin: auto;
     flex-direction: column;
     width: 100%;
-    font-family: "Urbanist", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   .contacto__titulo__cont {
     display: flex;
@@ -1573,7 +1599,7 @@ body {
     flex-direction: none;
     width: 100%;
     padding: 0.7em;
-    font-family: "Urbanist", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
   }
   .contacto__local__map {
