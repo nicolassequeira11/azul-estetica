@@ -17,7 +17,8 @@ a{
 }
 
 body{
-    margin-top: 4em;
+    margin-top: 5em;
+    background-color: whitesmoke;
 }
 
 /* HOME */
@@ -249,7 +250,7 @@ body{
 
         &__item__boton{
             width: 90%;
-            margin: auto;
+            margin: 0 auto;
             font-size: 0.8em;
             padding: 1em;
             border: 1px solid black;
@@ -257,7 +258,8 @@ body{
         }
 
         &__item__boton:hover{
-            border: 2px solid black;
+            background-color: black;
+            color: white;
         }
 }
 
@@ -276,6 +278,7 @@ body{
 
         &__img{
             width: 100%;
+            height: 10em;
             object-fit: cover;
             transition: all 1s;
         }
@@ -341,7 +344,7 @@ body{
 
 .servicios-precios{
     @include commons.caja-flex (none, none, column);
-    width: calc(85%/3);
+    width: calc(90%/3);
     padding: 2em 0;
     
     
@@ -474,9 +477,6 @@ body{
             padding-left: 0.2em;
         }
 
-        &__texto{
-        }
-
         &__img__cont{
             display: flex;
             flex-direction: row;
@@ -494,7 +494,7 @@ body{
 
 .contacto{
     @include commons.caja-flex (center, auto, column);
-    width: 90%;
+    width: 97%;
     font-family: commons.$font-stack;
 
         &__titulo__cont{
@@ -510,14 +510,13 @@ body{
 
         &__cont{
             display: flex;
-            width: 90%;
+            width: 100%;
             margin: auto;
         }
 
         &__form{
-            @include commons.caja-flex (none, 1em auto 0, column);
-            width: 100%;
-            padding: 1em;
+            @include commons.caja-flex (none, auto, column);
+            width: 30%;
         }
 
         &__form__cont{
@@ -529,8 +528,9 @@ body{
 
         &__form__input{
             display: flex;
-            padding: 0.5em;
-            margin: 0.5em;
+            padding: 1em;
+            margin: 0.2em auto;
+            width: 100%;
             border: none;
             font-size: 0.8em;
         }
@@ -538,37 +538,38 @@ body{
         &__form__textarea{
             display: flex;
             padding: 1em;
-            margin: 0.5em;
+            width: 100%;
+            margin: 0.5em auto;
             border: none;
             font-size: 0.8em;
         }
 
         &__form__button{
-            @include commons.caja-flex (center, 0.5em , column);
+            @include commons.caja-flex (center, auto, column);
             padding: 1em;
+            width: 100%;
             background-color: white;
             border: none;
         }
 
         &__local{
             display: flex;
-            flex-direction: column;
-            width: 100%;
-            padding: 1em;
+            flex-direction: row;
+            width: 80%;
+            padding: 2em;
         }
 
         &__local__cont{
-            @include commons.caja-flex (center, 1em, column);
+            @include commons.caja-flex (center, auto, column);
             width: 90%;
             padding: 1em;
-            background-color: whitesmoke;
         }
 
         &__local__img__cont{
             @include commons.caja-flex (center, auto, none);
             position: relative;
             width: 100%;
-            height: 5em;
+            height: 13em;
             background: linear-gradient(155deg, rgba(20,20,20,0.9013656487985819) 0%, rgba(18,19,19,0.9041667692467612) 100%);
         }
 
@@ -576,14 +577,12 @@ body{
             @include commons.caja-flex (center, 0 auto, none);
             object-fit:cover;
             width: 100%;
-            opacity: 0.8;
         }
 
         &__local__img__titulo{
-            position: absolute;
-            color: white;
-            top: 0.3em;
-            font-size: 2.5em;
+            display: flex;
+            color: black;
+            font-size: 1.5em;
             width: 100%;
             text-align: center;
             font-weight: 700;
@@ -592,6 +591,7 @@ body{
         &__local__info__cont{
             @include commons.caja-flex (center, auto, column);
             width: 100%;
+            height: 12em;
             padding: 1em;
         }
 
@@ -599,7 +599,6 @@ body{
             @include commons.caja-flex (none, auto, none);
             width: 100%;
             padding: 0.7em;
-            font-size: 0.8em;
             font-family: commons.$font-stack;
             font-weight: 400;
         }
@@ -607,7 +606,7 @@ body{
         &__local__map{
             @include commons.caja-flex (center, auto, none);
             width: 100%;
-            height: 15em;
+            height: 10em;
         }
 }
 
@@ -628,14 +627,6 @@ body{
         &__texto{
             font-weight: 700;
             font-size: 0.7em;
-        }
-
-        &__titulo{
-            
-        }
-
-        &__subtitulo{
-
         }
 }
 
@@ -710,6 +701,226 @@ body{
             font-size: 0.8em;
         }
 }
+
+// CATALOGO //
+
+.catalogo-cont{
+    width: 90%;
+    display: flex;
+    height: 100%;
+    margin: auto;
+    padding: 4em 0 4em 0;
+}
+
+.catalogo{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    font-family: commons.$font-stack;
+
+        &__filtros{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        &__lista{
+            display: flex;
+            flex-direction: column;
+            width: 17%;
+        }
+
+        &__list{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-height: 50em;
+            margin: auto;
+            padding: 1em;
+        }
+
+        &__list__titulo{
+            color: black;
+            font-size: 1em;
+            font-weight: 700;
+            width: 100%;
+        }
+
+        &__list__item{
+            display: flex;
+            width: 100%;
+            color: black;
+            font-size: 0.9em;
+            line-height: 1.8em;
+        }
+
+        &__list__item:focus>.bi{
+            opacity: 1;
+        }
+
+        &__item{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 25%;
+            margin: auto 0;
+            min-width: 20%;
+        }
+
+        &__img{
+            display: flex;
+            margin: 0 auto;
+            width: 100%;
+            height: 16em;
+            object-fit: cover;
+        }
+
+        &__info__cont{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &__titulo{
+            width: 100%;
+            padding: 0.7em 0 0 1em;
+            font-size: 0.8em;
+            margin: 0 auto;
+        }
+
+        &__precio{
+            width: 100%;
+            margin: 0 auto;
+            padding: 0.3em 0 0.5em 0.8em;
+        }
+
+        &__boton{
+            width: 90%;
+            margin: 0 auto 1em;
+            font-size: 0.8em;
+            padding: 1em;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        &__boton:hover{
+            background-color: black;
+            color: white;
+        }
+
+        &__boton:hover>&__detalle{
+            color: white;
+        }
+
+        &__detalle{
+            color: black;
+            margin: auto;
+            text-align: center;
+        }
+}
+
+// PAGINADOR CATALOGO
+
+.paginador-catalogo{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+// DETALLES PRODUCTOS
+
+.detProductos{
+    width: 70%; 
+    margin: auto;
+    font-family: commons.$font-stack;
+}
+
+.bi{
+    opacity: 0;
+}
+
+// FORMULARIO ACCESO-REGISTRO //
+
+.form-usuario{
+    @include commons.caja-flex (center, auto, none);
+    width: 80%;
+    padding: 6em 0 10em 0;
+    font-family: commons.$font-stack;
+
+        &__error{
+            line-height: 2em; 
+            margin: 1em; 
+            background-color:#d9544f; 
+            width: 100%;
+            font-size: 1em;
+            color:white;
+        }
+
+        &__acceso{
+            width: 50%;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        &__registro{
+            width: 50%;
+            margin: auto;
+            padding: 2em;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        &__cont{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        &__titulo{
+            font-weight: 700;
+            text-align: center;
+            margin: auto;
+        }
+
+        &__boton{
+            background-color: #222529;
+            color: white;
+            font-size: 1em;
+            font-weight: 600;
+        }
+
+        &__boton:hover{
+            background-color: #34393f;
+            
+        }
+
+        &__tit-nc{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+            padding: 2em 0 0.5em 0;
+            text-align: center;
+        }
+
+        &__nc{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+
+}
+
 
 @media screen and (max-width:1328px) {
 
@@ -1181,9 +1392,6 @@ body{
                 font-weight: 600;
             }
     
-            &__texto{
-            }
-    
             &__img__cont{
                 justify-content: center;
                 width: 100%;
@@ -1315,5 +1523,27 @@ body{
             height: 15em;
         }
 }
+
+// CATALOGO //
+
+.catalogo{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: auto;
+
+        &__productos{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+
+        &__item{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+}
+
 
 }

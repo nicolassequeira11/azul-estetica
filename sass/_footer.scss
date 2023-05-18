@@ -12,41 +12,6 @@ footer{
     font-family: commons.$font-stack;
     border-top: 1px solid black;
 
-        &__info{
-            width: calc(100%/2);
-            text-align: center;
-            margin: auto;
-            padding: 1em;
-        }
-
-        &__info__titulo{
-            text-align: center;
-            color: black;
-            margin: auto;
-            font-weight: 800;
-            font-size: 1.2em;
-            padding-bottom: 0.5em;
-        }
-
-        &__info__texto{
-            margin-top: 1em;
-            font-size: 0.7em;
-            margin: auto;
-            text-align: center;
-            color: black;
-            font-weight: 400;
-        }
-
-        &__img{
-            @include commons.caja-flex (center, 0 auto, none);
-            width: calc(80%/3);
-        }
-
-        &__img__logo{
-            @include commons.caja-flex (center, auto, column);
-            width: 15em;
-        }
-
         &__text{
             @include commons.caja-flex (none, auto, row);
             width: 100%;
@@ -98,29 +63,6 @@ footer{
         @include commons.caja-flex (center, auto, column);
         width: 70%;
         padding: 1em;
-    
-            &__info{
-                width: 100%;
-                text-align: center;
-                margin: auto;
-            }
-    
-            &__info__titulo{
-                text-align: center;
-                color: white;
-                font-size: 1.7em;
-                margin: auto;
-                padding-top: 1em;
-            }
-    
-            &__info__texto{
-                padding-top: 0.5em;
-                padding-bottom: 1em;
-                font-size: 1em;
-                margin: auto;
-                text-align: center;
-                color: white;
-            }
     
             &__text{
                 @include commons.caja-flex (none, auto, row);

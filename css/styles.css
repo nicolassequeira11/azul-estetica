@@ -1,7 +1,7 @@
 /* COLORS */
 .logo {
   height: 100%;
-  padding: 0.6em;
+  padding: 1em 0 1em 0;
 }
 .logo__img {
   display: flex;
@@ -32,9 +32,9 @@
 .nav {
   display: flex;
   justify-content: center;
-  margin: -4em auto 0;
+  margin: -5em auto 0;
   flex-direction: none;
-  height: 4em;
+  height: 5em;
   background-color: #080808;
   background: linear-gradient(0deg, rgb(22, 22, 22) 30%, rgb(0, 0, 0) 100%);
   position: fixed;
@@ -65,6 +65,7 @@
   text-decoration: none;
   color: #ffffff;
   margin: 2px auto 0;
+  font-size: 1.1em;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #c0c0b4;
@@ -93,6 +94,10 @@
   margin: auto;
   flex-direction: none;
   height: 1.5em;
+}
+
+.nav-item.dropdown::marker {
+  display: none;
 }
 
 @media screen and (max-width: 1100px) {
@@ -215,42 +220,6 @@ footer {
   font-family: "Poppins", sans-serif;
   border-top: 1px solid black;
 }
-.footer__info {
-  width: 50%;
-  text-align: center;
-  margin: auto;
-  padding: 1em;
-}
-.footer__info__titulo {
-  text-align: center;
-  color: black;
-  margin: auto;
-  font-weight: 800;
-  font-size: 1.2em;
-  padding-bottom: 0.5em;
-}
-.footer__info__texto {
-  margin-top: 1em;
-  font-size: 0.7em;
-  margin: auto;
-  text-align: center;
-  color: black;
-  font-weight: 400;
-}
-.footer__img {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  flex-direction: none;
-  width: 26.6666666667%;
-}
-.footer__img__logo {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  flex-direction: column;
-  width: 15em;
-}
 .footer__text {
   display: flex;
   justify-content: none;
@@ -302,26 +271,6 @@ footer {
     width: 70%;
     padding: 1em;
   }
-  .footer__info {
-    width: 100%;
-    text-align: center;
-    margin: auto;
-  }
-  .footer__info__titulo {
-    text-align: center;
-    color: white;
-    font-size: 1.7em;
-    margin: auto;
-    padding-top: 1em;
-  }
-  .footer__info__texto {
-    padding-top: 0.5em;
-    padding-bottom: 1em;
-    font-size: 1em;
-    margin: auto;
-    text-align: center;
-    color: white;
-  }
   .footer__text {
     display: flex;
     justify-content: none;
@@ -360,7 +309,7 @@ a {
 }
 
 body {
-  margin-top: 4em;
+  margin-top: 5em;
 }
 
 /* HOME */
@@ -613,14 +562,15 @@ body {
 }
 .productos__item__boton {
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
   font-size: 0.8em;
   padding: 1em;
   border: 1px solid black;
   background-color: white;
 }
 .productos__item__boton:hover {
-  border: 2px solid black;
+  background-color: black;
+  color: white;
 }
 
 .publi-horizontal-2 {
@@ -637,6 +587,7 @@ body {
 }
 .publi-horizontal-2__img {
   width: 100%;
+  height: 10em;
   object-fit: cover;
   transition: all 1s;
 }
@@ -704,7 +655,7 @@ body {
   justify-content: none;
   margin: none;
   flex-direction: column;
-  width: 28.3333333333%;
+  width: 30%;
   padding: 2em 0;
 }
 .servicios-precios__list {
@@ -872,7 +823,7 @@ body {
   justify-content: center;
   margin: auto;
   flex-direction: column;
-  width: 90%;
+  width: 97%;
   font-family: "Poppins", sans-serif;
 }
 .contacto__titulo__cont {
@@ -889,16 +840,15 @@ body {
 }
 .contacto__cont {
   display: flex;
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 .contacto__form {
   display: flex;
   justify-content: none;
-  margin: 1em auto 0;
+  margin: auto;
   flex-direction: column;
-  width: 100%;
-  padding: 1em;
+  width: 30%;
 }
 .contacto__form__cont {
   display: flex;
@@ -911,41 +861,43 @@ body {
 }
 .contacto__form__input {
   display: flex;
-  padding: 0.5em;
-  margin: 0.5em;
+  padding: 1em;
+  margin: 0.2em auto;
+  width: 100%;
   border: none;
   font-size: 0.8em;
 }
 .contacto__form__textarea {
   display: flex;
   padding: 1em;
-  margin: 0.5em;
+  width: 100%;
+  margin: 0.5em auto;
   border: none;
   font-size: 0.8em;
 }
 .contacto__form__button {
   display: flex;
   justify-content: center;
-  margin: 0.5em;
+  margin: auto;
   flex-direction: column;
   padding: 1em;
+  width: 100%;
   background-color: white;
   border: none;
 }
 .contacto__local {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 1em;
+  flex-direction: row;
+  width: 80%;
+  padding: 2em;
 }
 .contacto__local__cont {
   display: flex;
   justify-content: center;
-  margin: 1em;
+  margin: auto;
   flex-direction: column;
   width: 90%;
   padding: 1em;
-  background-color: whitesmoke;
 }
 .contacto__local__img__cont {
   display: flex;
@@ -954,7 +906,7 @@ body {
   flex-direction: none;
   position: relative;
   width: 100%;
-  height: 5em;
+  height: 13em;
   background: linear-gradient(155deg, rgba(20, 20, 20, 0.9013656488) 0%, rgba(18, 19, 19, 0.9041667692) 100%);
 }
 .contacto__local__img {
@@ -964,13 +916,11 @@ body {
   flex-direction: none;
   object-fit: cover;
   width: 100%;
-  opacity: 0.8;
 }
 .contacto__local__img__titulo {
-  position: absolute;
-  color: white;
-  top: 0.3em;
-  font-size: 2.5em;
+  display: flex;
+  color: black;
+  font-size: 1.5em;
   width: 100%;
   text-align: center;
   font-weight: 700;
@@ -981,6 +931,7 @@ body {
   margin: auto;
   flex-direction: column;
   width: 100%;
+  height: 12em;
   padding: 1em;
 }
 .contacto__local__info__texto {
@@ -990,7 +941,6 @@ body {
   flex-direction: none;
   width: 100%;
   padding: 0.7em;
-  font-size: 0.8em;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
@@ -1000,7 +950,7 @@ body {
   margin: auto;
   flex-direction: none;
   width: 100%;
-  height: 15em;
+  height: 10em;
 }
 
 .bi {
@@ -1022,6 +972,7 @@ body {
   font-weight: 700;
   font-size: 0.7em;
 }
+
 .fusio-dose {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -1084,6 +1035,112 @@ body {
   text-align: left;
   font-weight: 400;
   font-size: 0.8em;
+}
+
+.catalogo-cont {
+  width: 90%;
+  display: flex;
+  height: 100%;
+  margin: auto;
+  padding: 4em 0 4em 0;
+}
+
+.catalogo {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  background-color: red;
+}
+.catalogo__filtros {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+.catalogo__lista {
+  display: flex;
+  flex-direction: column;
+  width: 17%;
+}
+.catalogo__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 50em;
+  margin: auto;
+  padding: 1em;
+}
+.catalogo__list__titulo {
+  color: black;
+  font-size: 1em;
+  font-weight: 700;
+  width: 100%;
+}
+.catalogo__list__item {
+  display: flex;
+  width: 100%;
+  color: black;
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+.catalogo__list__item:focus > .bi {
+  opacity: 1;
+}
+.catalogo__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 25%;
+  min-width: 20%;
+}
+.catalogo__img {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 16em;
+  object-fit: cover;
+}
+.catalogo__info__cont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.catalogo__titulo {
+  width: 100%;
+  padding: 1em 0 0 1em;
+  font-size: 0.8em;
+}
+.catalogo__precio {
+  width: 100%;
+  padding-left: 0.8em;
+}
+.catalogo__boton {
+  width: 90%;
+  margin: 0 auto 1em;
+  font-size: 0.8em;
+  padding: 1em;
+  border: 1px solid black;
+  background-color: white;
+}
+.catalogo__boton:hover {
+  background-color: black;
+  color: white;
+}
+
+.paginador-catalogo {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+.bi {
+  opacity: 0;
 }
 
 @media screen and (max-width: 1328px) {
@@ -1710,6 +1767,22 @@ body {
     flex-direction: none;
     width: 100%;
     height: 15em;
+  }
+  .catalogo {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: auto;
+  }
+  .catalogo__productos {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .catalogo__item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
 
