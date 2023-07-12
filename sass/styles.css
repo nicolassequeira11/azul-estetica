@@ -309,7 +309,6 @@ a {
 
 body {
   margin-top: 5em;
-  background-color: whitesmoke;
 }
 
 /* HOME */
@@ -1180,14 +1179,14 @@ body {
   width: 50%;
   margin: 0 auto;
   padding: 2em;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 10px;
 }
 .form-usuario__registro {
   width: 50%;
   margin: auto;
   padding: 2em;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 10px;
 }
 .form-usuario__cont {
