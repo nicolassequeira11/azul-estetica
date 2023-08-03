@@ -180,6 +180,7 @@ header {
 .fusio__content-info {
   display: flex;
   margin: auto;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .fusio__content-info__content {
@@ -384,7 +385,6 @@ header {
   height: fit-content;
   width: 100%;
   height: fit-content;
-  background-color: red;
 }
 .contact__content-local-img__img {
   display: flex;
