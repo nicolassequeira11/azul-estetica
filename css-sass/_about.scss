@@ -1,0 +1,68 @@
+@use "utilities.scss" as u;
+
+.about{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    font-family: u.$font-first;
+    text-align: justify;
+
+        &__content{
+            width: 100%;
+            display: flex;
+            margin: 5.4em auto -1em;
+            flex-wrap: wrap;
+            
+        }
+
+        &__content__title{
+            text-align: center;
+            margin: auto;
+            font-weight: 700;
+            padding: 1.5em 0 1em;
+            font-size: 2.5em;
+        }
+
+        &__content__subtitle{
+            padding:0 0 4em;
+        }
+
+        &__content-info{
+            margin: auto;
+        }
+
+        &__content-info__icon{
+            transform: scale(0.7);
+            margin: auto;
+        }
+
+        &__content-info__title{
+            font-weight: 600;
+            margin: auto;
+        }
+
+        &__content-info__text{
+            padding: 1em 0;
+        }
+
+        &__content-gallery{
+            display: flex;
+            margin:4em auto 7em;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &__content-gallery__img{
+            object-fit: cover;
+            padding: 0.3em;
+        }
+
+        &__content-gallery__content-1{
+            display: flex;
+        }
+
+        &__content-gallery__content-2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+}

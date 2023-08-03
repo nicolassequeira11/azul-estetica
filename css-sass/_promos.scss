@@ -1,0 +1,47 @@
+@use "utilities.scss" as u;
+
+.promos{
+display: flex;
+width: 100%;
+margin: auto;
+
+        &__content{
+            width: 100%;
+            display: flex;
+            margin: 5.4em auto -1em;
+            flex-wrap: wrap;
+        }
+
+        &__content-img{
+            display: flex;
+            padding: 4em 0;
+            justify-content: center;
+            background-color: map-get(u.$colors, "color1");
+            background: linear-gradient(0deg, rgb(212, 212, 212) 10%, rgb(22, 22, 22) 100%);
+            flex-wrap: wrap;
+        }
+
+        &__content-img__content{
+            transform: scale(1.2);
+            margin: 1.5em 1em;
+        }
+
+        &__content-img__img{
+            
+        }
+
+        &__content-offer{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto 2em;
+        }
+
+        &__content-offer__content{
+
+        }
+
+        &__content-offer__img{
+
+        }
+
+}

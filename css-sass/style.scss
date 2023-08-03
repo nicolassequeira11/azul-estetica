@@ -1,0 +1,227 @@
+@forward "nav";
+@forward "footer";
+@forward "fusio";
+@forward "promos";
+@forward "services";
+@forward "about";
+@forward "contact";
+@use "utilities" as u;
+
+*{
+    box-sizing: 0;
+    padding: 0;
+}
+
+// VIDEO
+
+.video{
+    width: 100%;
+    height: 43em;
+
+        &__content-video{
+            height: 10em;
+            margin: auto;
+        }
+
+        &__content-video__video{
+            height: 43em;
+            object-fit: cover;
+        }
+}
+
+// SERVICES
+
+.services-home{
+    width: 100%;
+    display: flex;
+
+
+        &__content{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__content-img{
+            display: flex;
+            padding: 5px 3px;
+        }
+}
+
+// BRANDS
+
+.brands{
+    width: 100%;
+    margin: 3em auto;
+
+        &__content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__content-img{
+            width: 100%;
+            padding: 20px;
+        }
+
+        &__content-img__img{
+            display: flex;
+            margin: auto;
+        }
+}
+
+// PRODUCTS
+
+.products{
+    font-family: u.$font-first;
+    margin: 6em auto;
+
+        &__content{
+            width: 100%;
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__content-item{
+            margin: auto;
+            justify-content: center;
+            height: fit-content;
+        }
+
+        &__content-item__img-item{
+            object-fit: contain;
+            transition: all 0.3s;
+        }
+
+        &__content-item__img-item:hover{
+            transform: scale(1.15);
+        }
+
+        &__content-item__content-info{
+            margin: auto;
+            height: fit-content;
+            justify-content: center;
+        }
+
+        &__content-item__title{
+            margin: 10px auto 0;
+            padding: 5px 0;
+        }
+
+        &__content-item__price{
+            margin: 0 auto 15px;
+            padding: 5px 0;
+        }
+
+        &__content-item__button{
+            text-decoration: none;
+            padding: 10px;
+            display: flex;
+            color: map-get(u.$colors, "color1");
+            border: 1px solid map-get(u.$colors, "color1");
+            margin: auto;
+            justify-content: center;
+        }
+
+        &__content-item__button:hover{
+            color: map-get(u.$colors, "color2");
+            background-color: map-get(u.$colors, "color1");;
+        }
+}
+
+// ADVERTISING
+
+.advertising{
+    display: flex;
+    margin: 3em auto;
+    justify-content: center;
+    flex-wrap: wrap;
+
+        &__content{
+            width: 100%;
+            display: flex;
+            margin: 0.5em 0;
+            padding: 0 1em;
+            height: fit-content;
+            overflow: hidden;
+        }
+
+        &__content__img{
+            display: flex;
+            transition: all 0.7s;
+            object-fit: contain;
+        }
+
+        &__content__img:hover{
+            transform: scale(1.2);
+        }
+}
+
+// SLOGAN
+
+.slogan{
+    background-color: map-get(u.$colors, "color1");
+    font-family: u.$font-first;
+    margin: 3em auto;
+
+        &__text{
+            color: map-get(u.$colors, "color2");
+            margin: auto;
+            padding: 0.8em 0;
+            text-align: center;
+            font-size: xx-large;
+            font-weight: 700;
+        }
+}
+
+// SOCIAL MEDIA
+
+.sm{
+    display: flex;
+    margin: 6em auto;
+    font-family: u.$font-first;
+
+        &__content{
+            margin: auto;
+        }
+
+        &__content-title{
+            display: flex;
+            margin: 0 auto 2em;
+            padding: 0 0.5em;
+        }
+
+        &__content-title__icon{
+            display: flex;
+            margin: auto 0.5em;
+            transform: scale(1.3);
+        }
+
+        &__content-title__title{
+            margin: auto 0;
+            font-size: xx-large;
+        }
+
+        &__content-img{
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__content-img__content{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__content-img__content:hover > &__content-img__link{
+            opacity: 0.7;
+        }
+        
+        &__content-img__img{
+            margin: 1em auto;
+        }
+}

@@ -1,138 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <title>Azul Estética</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <!-- Goole Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="../css-sass/style.css">
+    <!-- Estilo Bootstrap -->
+    <link rel="stylesheet" href="../css-sass/style-bootstrap.css">
+    <title>Fusio-Dose</title>
 </head>
 <body>
 
-    <header id="nav">
+    <!-- Nav -->
 
-		<nav class="nav">
-			<div class="logo"><a href="../index.html" class="logo__link"><img src="../images/azul-white.png" class="logo__img" alt="Logo Chorren Burgers"></a></div>
-				<ul class="nav__links">
-					<li class="nav__link"><a class="nav__link__texto" href="../index.html">Inicio</a></li>
-					<li class="nav__link"><a class="nav__link__texto" href="servicios.html">Servicios</a></li>
-					<li class="nav__link"><a class="nav__link__texto" href="promociones.html">Promociones</a></li>
-					<li class="nav__link"><a class="nav__link__texto" href="nosotros.html">Nosotros</a></li>
-					<li class="nav__link"><a class="nav__link__texto" href="contacto.html">Contacto</a></li>
+    <header class="raw col-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="col-11 col-lg-8 col-xl-6 d-flex justify-content-center m-auto">
+                <a class="navbar-brand col-10 col-lg-2" href="#">
+                    <img src="../media/azul-white.png" width="130" height="60" class="d-inline-block object-fit-contain align-top" alt="">
+                </a>
+                <div class="nav-content-icon col-1 d-lg-none">
+                    <i class="fa-solid fa-bars fa-2xl nav-icon col-12" style="color: #ffffff;"></i>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav col-12">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="promos.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="schedules.html">Horarios</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 d-none d-lg-flex nav-content-sm">
+                    <a href="https://www.instagram.com/azulestetica/" target="_blank">
+                        <i class="fa-brands fa-instagram fa-xl nav-icon-sm"></i>
+                    </a>
+                    <a href="https://www.facebook.com/azulesteticaintegral" target="_blank">
+                        <i class="fa-brands fa-square-facebook fa-xl nav-icon-sm"></i>
+                    </a>
+                </div>
+            </div>
 
-						<div class="nav-icon">
-							<a class="nav-icon__cont-icon" href="https://www.instagram.com/azulestetica/?hl=es" target="_blank"><img class="nav-icon__icon" src="../images/icon/icon-instagram.png" alt=""></a>
-							<a class="nav-icon__cont-icon" href="https://www.facebook.com/azulesteticaintegral" target="_blank"><img class="nav-icon__icon" src="../images/icon/icon-facebook.png" alt=""></a>
-							<a class="nav-icon__cont-icon" href=""><img class="nav-icon__icon" src="../images/icon/icon-instagram.png" alt=""></a>
-						</div>
+            <div class="links-mobile col-12">
+                <ul class="navbar-nav col-12">
+                    <li class="nav-item nav-item-mobile">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item nav-item-mobile">
+                        <a class="nav-link" href="services.html">Servicios</a>
+                    </li>
+                    <li class="nav-item nav-item-mobile">
+                        <a class="nav-link" href="promos.html">Promociones</a>
+                    </li>
+                    <li class="nav-item nav-item-mobile">
+                        <a class="nav-link" href="about.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item nav-item-mobile">
+                        <a class="nav-link" href="schedules.html">Horarios</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-				</ul>
-				<button class="ham" type="button">
-					<span class="ham__br ham__br--1"></span>
-					<span class="ham__br ham__br--2"></span>
-					<span class="ham__br ham__br--3"></span>
-				</button>
-		</nav>
-	</header>
+    <!-- Fusio Dose -->
 
-    <section>
+    <div class="fusio raw">
+        <div class="fusio__content col-10">
 
-        <div class="fusio-dose-portada">
-            <p class="fusio-dose-portada__texto">¡EXPERIMENTA UNA LUJOSA TRANSFORMACIÓN DE TU CABELLO!</p>
-            <h1 class="fusio-dose-portada__titulo">En el salón: Fusio-Dose</h1>
-            <p class="fusio-dose-portada__subtitulo">Tratamiento en el salón $1490 incluye brushing</p>
+            <div class="fusio__content-title">
+
+                <p class="fusio__content-title__subtitle">
+                    ¡EXPERIMENTA UNA LUJOSA TRANSFORMACIÓN DE TU CABELLO!
+                </p>
+                <h3 class="fusio__content-title__title">
+                    En el salón: Fusio-Dose
+                </h3>
+                <p class="fusio__content-title__text">
+                    Tratamiento en el salón $1490 incluye brushing.
+                </p>
+
+            </div>
+
+            <div class="fusio__content-img col-12">
+
+                <div class="fusio__content-img__content col-6 col-md-2">
+                    <img src="../media/products/Fusio-Dose/fusio-dose-nutrition.jpg" alt="" class="fusio__content-img__img col-12">
+                    <h5 class="fusio__content-img__title">Nutrition</h5>
+                    <p class="fusio__content-img__text">Para cabellos muy secos</p>
+                </div>
+
+                <div class="fusio__content-img__content col-6 col-md-2">
+                    <img src="../media/products/Fusio-Dose/fusio-dose-reconstruction.jpg" alt="" class="fusio__content-img__img col-12">
+                    <h5 class="fusio__content-img__title">Reconstruction</h5>
+                    <p class="fusio__content-img__text">Para cabellos dañados y sobreprocesados</p>
+                </div>
+
+                <div class="fusio__content-img__content col-6 col-md-2">
+                    <img src="../media/products/Fusio-Dose/fusio-dose-cicablond.png" alt="" class="fusio__content-img__img col-12">
+                    <h5 class="fusio__content-img__title">Cicablond</h5>
+                    <p class="fusio__content-img__text">Para todo tipo de cabellos rubios decolorados hair</p>
+                </div>
+
+                <div class="fusio__content-img__content col-6 col-md-2">
+                    <img src="../media/products/Fusio-Dose/fusio-dose-brillance.jpg" alt="" class="fusio__content-img__img col-12">
+                    <h5 class="fusio__content-img__title">Brillance</h5>
+                    <p class="fusio__content-img__text">Para todo tipo de cabellos teñidos</p>
+                </div>
+
+                <div class="fusio__content-img__content col-6 col-md-2">
+                    <img src="../media/products/Fusio-Dose/fusio-dose-anti-frizz.jpg" alt="" class="fusio__content-img__img col-12">
+                    <h5 class="fusio__content-img__title">Anti-Frizz</h5>
+                    <p class="fusio__content-img__text">Para cabellos sensibles al encrespamiento provocado por la humedad</p>
+                </div>
+
+            </div>
+
+            <div class="fusio__content-info col-12">
+
+                <div class="fusio__content-info__content col-6">
+                    <img src="../media/products/Fusio-Dose/fusio-dose-1.jpg" class="fusio__content-info__img col-12" alt="">
+                    <h5 class="fusio__content-info__title">
+                        Una transformación instantánea
+                    </h5>
+                    <p class="fusio__content-info__text">
+                        Los potenciadores, cinco fórmulas concentradas, se mezclan con los concentrados, 
+                        cuatro poderosos ingredientes activos, que permiten realizar múltiples combinaciones para un tratamiento 
+                        diseñado a la medida que transforma el cabello al instante y de forma duradera.
+                    </p>
+                </div>
+
+                <div class="fusio__content-info__content col-6">
+                    <img src="../media/products/Fusio-Dose/fusio-dose-2.jpg" class="fusio__content-info__img col-12" alt="">
+                    <h5 class="fusio__content-info__title">
+                        El primer laboratorio profesional del cabello de Kérastase
+                    </h5>
+                    <p class="fusio__content-info__text">
+                        Concentrados y potenciadores se combinan en el centro de un nuevo sistema, 
+                        un verdadero cóctel dedicado al cuidado personalizado de Fusio-Dose. 
+                        Una "dosis" de belleza en el corazón del salón, para mujeres ocupadas y exigentes.
+                    </p>
+                </div>
+
+            </div>
         </div>
+    </div>
 
-    </section>
+    <!-- Footer -->
 
-    <section>
+    <footer class="footer raw">
+        <div class="footer__content col-12">
 
-        <div class="fusio-dose">
-
-            <div class="fusio-dose__cont">
-                <img src="../images/productos/Fusio-Dose/fusio-dose-nutrition.jpg" alt="" class="fusio-dose__img">
-                <h2 class="fusio-dose__titulo">Nutrition</h2>
-                <p class="fusio-dose__texto">Para cabellos muy secos</p>
+            <div class="footer__content-payments col-10 col-xl-6">
+                <div class="footer__content-payments__content col-1">
+                    <img src="../media/payments/visa.svg" alt="" class="footer__content-payments__img col-12">
+                </div>
+                <div class="footer__content-payments__content col-1">
+                    <img src="../media/payments/master.svg" alt="" class="footer__content-payments__img col-12">
+                </div>
+                <div class="footer__content-payments__content col-1">
+                    <img src="../media/payments/oca.svg" alt="" class="footer__content-payments__img col-12">
+                </div>
+                <div class="footer__content-payments__content col-1">
+                    <img src="../media/payments/scotiabank.svg" alt="" class="footer__content-payments__img col-12">
+                </div>
+                <div class="footer__content-payments__content col-1">
+                    <img src="../media/payments/ebrou.svg" alt="" class="footer__content-payments__img col-12">
+                </div>
+                <div class="footer__content-payments__content col-1">
+                    <img src="../media/payments/anda.svg" alt="" class="footer__content-payments__img col-12">
+                </div>
+                <div class="footer__content-payments__content col-1">
+                    <img src="../media/payments/cabal.svg" alt="" class="footer__content-payments__img col-12">
+                </div>
+                <div class="footer__content-payments__content col-1">
+                    <img src="../media/payments/bbvanet.svg" alt="" class="footer__content-payments__img col-12">
+                </div>
+                <div class="footer__content-payments__content col-1">
+                    <img src="../media/payments/creditel.svg" alt="" class="footer__content-payments__img col-12">
+                </div>
             </div>
 
-            <div class="fusio-dose__cont">
-                <img src="../images/productos/Fusio-Dose/fusio-dose-reconstruction.jpg" alt="" class="fusio-dose__img">
-                <h2 class="fusio-dose__titulo">Reconstruction</h2>
-                <p class="fusio-dose__texto">Para cabellos dañados y sobreprocesados</p>
-            </div>
-
-            <div class="fusio-dose__cont">
-                <img src="../images/productos/Fusio-Dose/fusio-dose-cicablond.png" alt="" class="fusio-dose__img">
-                <h2 class="fusio-dose__titulo">Cicablond</h2>
-                <p class="fusio-dose__texto">Para todo tipo de cabellos rubios decolorados hair</p>
-            </div>
-
-            <div class="fusio-dose__cont">
-                <img src="../images/productos/Fusio-Dose/fusio-dose-brillance.jpg" alt="" class="fusio-dose__img">
-                <h2 class="fusio-dose__titulo">Brillance</h2>
-                <p class="fusio-dose__texto">Para todo tipo de cabellos teñidos</p>
-            </div>
-
-            <div class="fusio-dose__cont">
-                <img src="/images/productos/Fusio-Dose/fusio-dose-anti-frizz.jpg"" class="fusio-dose__img">
-                <h2 class="fusio-dose__titulo">Anti-Frizz</h2>
-                <p class="fusio-dose__texto">Para cabellos sensibles al encrespamiento provocado por la humedad</p>
+            <div class="footer__content-text col-12">
+                <p class="footer__content-text__text col-12">
+                    © Azul Estética | Todos los Derechos Reservados | 
+                    <a href="https://nicolassequeira11.github.io/portafolio/" class="footer__content-text__link" target="_blank">
+                        Diseño y Desarrollo del Sitio Web por Nicolás Sequeira</a>
+                </p>
             </div>
 
         </div>
+    </footer>
 
-    </section>
-
-    <section>
-
-        <div class="fusio-dose-info">
-
-            <div class="fusio-dose-info__cont">
-                
-                <img src="../images/productos/Fusio-Dose/fusio-dose-1.jpg" alt="" class="fusio-dose-info__img">
-                <h2 class="fusio-dose-info__titulo">Una transformación instantánea</h2>
-                <p class="fusio-dose-info__texto">Los potenciadores, cinco fórmulas concentradas, se mezclan con los concentrados, cuatro poderosos ingredientes activos, que permiten realizar múltiples combinaciones para un tratamiento diseñado a la medida que transforma el cabello al instante y de forma duradera.</p>
-
-            </div>
-
-            <div class="fusio-dose-info__cont">
-
-                <img src="../images/productos/Fusio-Dose/fusio-dose-2.jpg" alt="" class="fusio-dose-info__img">
-                <h2 class="fusio-dose-info__titulo">El primer laboratorio profesional del cabello de Kérastase</h2>
-                <p class="fusio-dose-info__texto">Concentrados y potenciadores se combinan en el centro de un nuevo sistema, un verdadero cóctel dedicado al cuidado personalizado de Fusio-Dose. Una "dosis" de belleza en el corazón del salón, para mujeres ocupadas y exigentes.</p>
-
-            </div>
-        </div>
-
-    </section>
-
-	<footer>
-
-		<div class="footer__payments">
-            <div class="footer__payments__cont"><img src="../images/payments/visa.svg" alt="" class="footer__payments__img"></div>
-            <div class="footer__payments__cont"><img src="../images/payments/master.svg" alt="" class="footer__payments__img"></div>
-            <div class="footer__payments__cont"><img src="../images/payments/oca.svg" alt="" class="footer__payments__img"></div>
-            <div class="footer__payments__cont"><img src="../images/payments/scotiabank.svg" alt="" class="footer__payments__img"></div>
-            <div class="footer__payments__cont"><img src="../images/payments/ebrou.svg"" class="footer__payments__img"></div>
-            <div class="footer__payments__cont"><img src="../images/payments/anda.svg"" class="footer__payments__img"></div>
-            <div class="footer__payments__cont"><img src="../images/payments/cabal.svg" alt="" class="footer__payments__img"></div>
-            <div class="footer__payments__cont"><img src="../images/payments/bbvanet.svg" alt="" class="footer__payments__img"></div>
-            <div class="footer__payments__cont"><img src="../images/payments/creditel.svg" alt="" class="footer__payments__img"></div>
-        </div>
-
-		<div class="footer__text">
-			<div class="footer__text__cont">
-				<p class="footer__text__info">© Azul Estética / Montevideo, Uruguay / Desarrollado por Nicolás Sequeira</p>
-			</div>
-		</div>
-	</footer>
-
-	<script src="../js/menu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Menu Ham -->
+    <script src="../js/menu.js"></script>
+    <!-- Font Awesome Icon -->
+    <script src="https://kit.fontawesome.com/c9684ebd50.js" crossorigin="anonymous"></script>
 </body>
 </html>

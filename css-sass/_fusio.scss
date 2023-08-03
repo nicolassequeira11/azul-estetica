@@ -1,0 +1,89 @@
+@use "utilities.scss" as u;
+
+.fusio{
+    font-family: u.$font-first;
+    padding-top: 8em;
+    margin: 0 auto 5em;
+
+        &__content{
+            margin: auto;
+        }
+
+        &__content-title{
+            text-align: center;
+            justify-content: center;
+        }
+
+        &__content-title__subtitle{
+            font-weight: 800;
+            font-size: 0.8em;
+        }
+
+        &__content-title__title{
+            font-size: 3em;
+        }
+
+        &__content-title__text{
+            font-size: 1.2em;
+        }
+
+        // Fusio-Dose Products Images
+
+        &__content-img{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 3em auto;
+            justify-content: center;
+            text-align: center;
+        }
+
+        &__content-img__content{
+            margin: 0 auto;
+        }
+
+        &__content-img__img{
+            display: flex;
+            margin: auto;
+            object-fit: contain;
+        }
+
+        &__content-img__title{
+            font-weight: 700;
+            font-size: 1em;
+            padding-top: 1em;
+        }
+
+        &__content-img__text{
+            display: flex;
+            justify-content: center;
+            font-size: 0.9em;
+        }
+
+        // Fusio-Dose Info
+
+        &__content-info{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+
+        &__content-info__content{
+            margin: 0 auto;
+            padding: 0 1em;
+        }
+
+        &__content-info__img{
+            display: flex;
+            height: 15em;
+            object-fit: cover;
+        }
+
+        &__content-info__title{
+            font-weight: 700;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        &__content-info__text{
+        }
+}

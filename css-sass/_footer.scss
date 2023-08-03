@@ -1,0 +1,54 @@
+@use "utilities.scss" as u;
+
+.footer{
+    display: flex;
+    margin: auto;
+    font-family: u.$font-first;
+
+        &__content{
+            margin: auto;
+        }
+
+        &__content-payments{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+
+        &__content-payments__content{
+            display: flex;
+            height: 20px;
+            margin: auto;
+            object-fit: contain;
+        }
+
+        &__content-payments__img{
+            
+        }
+
+        &__content-text{
+            display: flex;
+            margin: 1em auto 0;
+            background-color: black;
+        }
+
+        &__content-text__text{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            text-align: center;
+            padding: 1em;
+            font-size: 0.8em;
+            color: #b6b6aa;
+        }
+
+        &__content-text__link{
+            text-decoration: none;
+            color: #b6b6aa;
+            padding:0 0 0 0.3em;
+        }
+
+        &__content-text__link:hover{
+            color: white;
+        }
+}
